@@ -27,8 +27,8 @@ def read_github_organisation(root, organisations):
             data = yaml.load(fh, Loader=yaml.Loader)
         if not 'type' in data:
             exit(f'type is missing from {yaml_file}')
-        if data['type'] not in ['corporation', 'non-profit']:
-            exit(f'Invalid type in {yaml_file}')
+        if data['type'] not in ['corporation', 'non-profit', 'university']:
+            exit(f"Invalid type '{data['type']}' in {yaml_file}")
         if not 'name' in data:
             exit(f'name is missing from {yaml_file}')
         if 'org' in data:
