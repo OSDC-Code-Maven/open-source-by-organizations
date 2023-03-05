@@ -3,8 +3,13 @@
 <h1 class="title">{{title}}</h1>
 
 <ul>
-{% for org in organizations %}
-    <li><a href="https://github.com/{{org.id}}">{{org.name}}</a></li>
+{% for org in github_organisations %}
+    <li>
+        <a href="https://github.com/{{org.id}}">{{org.name}}</a>
+        {% if org.org %}
+        ( {{org.org.name}} )
+        {% endif %}
+    </li>
 {% endfor %}
 </ul>
 
