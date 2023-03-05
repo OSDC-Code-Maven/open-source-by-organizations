@@ -21,6 +21,12 @@ def main():
         # print(yaml_file)
         with open(yaml_file) as fh:
             data = yaml.load(fh, Loader=yaml.Loader)
+            if not 'type' in data:
+                exit(f'type is missing from {yaml_file}')
+            if data['type'] not in ['corporation']:
+                exit(f'Invalid type in {yaml_file}')
+            if not 'name' in data:
+                exit(f'name is missing from {yaml_file}')
             data['id'] = yaml_file.parts[-1].replace('.yaml', '')
             #print(data)
             organizations.append(data)
