@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+
+env:
+    MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    name: Generate HTML
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v2
+
+    - name: Generate HTML Pages
+      run: |
+        pip install -r requirements.txt
+        python generate.py
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v1
+      if: github.ref == 'refs/heads/main'
+
+  # Deployment job
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: generate
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
+
