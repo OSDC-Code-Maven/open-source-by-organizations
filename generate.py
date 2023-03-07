@@ -32,6 +32,8 @@ def read_github_organisation(root, organisations):
             exit(f"Invalid type '{data['type']}' in {yaml_file}")
         if not 'name' in data:
             exit(f'name is missing from {yaml_file}')
+        if data['name'] == '':
+            exit(f'name is empty in {yaml_file}')
         if 'org' in data:
             if data['org'] not in organisations:
                 exit(f"Invalid org '{data['org']}' in {yaml_file}")
