@@ -26,6 +26,20 @@ def read_github_organisation(root, organisations):
         # print(yaml_file)
         with open(yaml_file) as fh:
             data = yaml.load(fh, Loader=yaml.Loader)
+
+        if 'org' in data:
+            if data['org'] not in organisations:
+                exit(f"Invalid org '{data['org']}' in {yaml_file}")
+            data['org_name']  = organisations[ data['org'] ]['name']
+            for field in organisations[ data['org'] ]:
+                if field == 'name':
+                    continue
+                if field in data:
+                    exit(f'File has "{field}" field but also inherits it from org in {yaml_file}')
+                    continue
+                data[field] = organisations[ data['org'] ][field]
+
+
         if not 'type' in data:
             exit(f'type is missing from {yaml_file}')
         if data['type'] not in org_types:
@@ -34,10 +48,6 @@ def read_github_organisation(root, organisations):
             exit(f'name is missing from {yaml_file}')
         if data['name'] == '':
             exit(f'name is empty in {yaml_file}')
-        if 'org' in data:
-            if data['org'] not in organisations:
-                exit(f"Invalid org '{data['org']}' in {yaml_file}")
-            data['org']  = organisations[ data['org'] ]
         data['id'] = yaml_file.parts[-1].replace('.yaml', '')
         #print(data)
         github_organisations.append(data)

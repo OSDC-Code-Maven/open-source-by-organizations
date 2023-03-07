@@ -6,8 +6,8 @@
 {% for org in github_organisations %}
     <li>
         <a href="https://github.com/{{org.id}}">{{org.name}}</a>
-        {% if org.org %}
-        ( {{org.org.name}} )
+        {% if org.org_name %}
+        ( {{org.org_name}} )
         {% endif %}
     </li>
 {% endfor %}
