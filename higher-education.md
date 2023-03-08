@@ -5,7 +5,7 @@ Here you can find links to the GitHub organizations of the institutions or that 
 
 If you know more send a Pull-Request or open an issue with the links.
 
-There are separate lists for [Open Source by Corporation](https://github.com/szabgab/open-source-by-corporations) and [Open Source by government](https://github.com/szabgab/open-source-by-government).
+Moving to YAML files
 
 ## [Polytechnique Montreal](https://www.polymtl.ca/), Canada
 
