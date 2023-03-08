@@ -2,7 +2,7 @@ import pathlib
 import yaml
 from jinja2 import Environment, FileSystemLoader
 
-org_types = ['corporation', 'non-profit', 'university']
+org_types = ['corporation', 'non-profit', 'university', 'other']
 
 def render(template, filename, **args):
     templates_dir = pathlib.Path(__file__).parent.joinpath('templates')
