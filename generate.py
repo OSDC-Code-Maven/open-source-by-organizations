@@ -15,6 +15,8 @@ def render(template, filename, **args):
 def read_organisations(root):
     organisations = {}
     for yaml_file in root.joinpath('organisations').iterdir():
+        if yaml_file.suffix != '.yaml':
+            exit(f"Invalid file name {yaml_file}")
         with open(yaml_file) as fh:
             data = yaml.load(fh, Loader=yaml.Loader)
         organisations[ yaml_file.parts[-1].replace('.yaml', '') ] = data
