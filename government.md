@@ -95,4 +95,15 @@ There are separate lists for [Open Source by Higher Education](https://github.co
 
 * [OpenGovernment](https://github.com/opengovernment) (this should be probably moved to non-profits)
 
-
+* [code.gov](https://github.com/GSA)
+    * This initiative includes most US government opensource repos. I will pick some interesting ones here. 
+* [National Security Agency](https://github.com/NationalSecurityAgency) (Yes, it is NSA spying on github, not a parody.)
+    * **ghidra** is a very powerful reverse compile tool, at IDA pro level. This is likely the reason NSA got into open source.
+* [NASA](https://www.nasa.gov/)
+    * Too many repos to list here.
+* [U.S. Department of Energy Office of Scientific and Technical Information](https://github.com/doecode) Mainly maintained by personals in Livermore national lab.
+* [Federal Aviation Administration](https://github.com/Federal-Aviation-Administration)
+    * [Airport Status Web Service (ASWS)](https://github.com/Federal-Aviation-Administration/ASWS) An API to search FAA airports and flight status.
+* [United States Geological Survey Astrogeology Science Center](https://github.com/USGS-Astrogeology)
+    * Integrated Software for Imagers and Spectrometers (ISIS3)
+* [DEVCOM Army Research Laboratory](https://github.com/usarmyresearchlab)
