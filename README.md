@@ -12,3 +12,23 @@ Here you can find links to the GitHub organizations of the institutions or that 
 If you know more send a Pull-Request or open an issue with the links.
 
 In this repository we collect these organizations.
+
+## File format
+
+### `organisations/`
+
+Some corporation and universities have multiple GitHub organizations. For example in a university each research lab might have its own GitHub organization. In order to have store common information about these we have a separate folder called `organisations/` where we have a YAML file for each such corporation or university. The YAML files in the `github/` folder can refer to this entity by adding the `org:` field.
+
+For example see the `Bosch` entries.
+
+Required fields: `type`, `url`.
+Optional fields: `city`, `state`, `country`
+
+
+### `github/`
+
+We store information about GitHub organizations (not about individual GitHub repositories).
+The name of the file is `github/ORGA.yaml` where ORGA is the exact same name as `https://github.com/ORGA/`. The exact case will be used to display the name of the repository.
+
+Required fields: `name` and either `type` or `org`.
+
