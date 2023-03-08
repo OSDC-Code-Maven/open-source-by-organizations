@@ -23,6 +23,8 @@ def read_organisations(root):
 def read_github_organisation(root, organisations):
     github_organisations = []
     for yaml_file in root.joinpath('github').iterdir():
+        if yaml_file.suffix != '.yaml':
+            exit(f"Invalid file name {yaml_file}")
         # print(yaml_file)
         with open(yaml_file) as fh:
             data = yaml.load(fh, Loader=yaml.Loader)
