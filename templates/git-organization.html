@@ -21,6 +21,12 @@
     {% if org.country %}
     <li>{{org.country}}</li>
     {% endif %}
+
+
+    {% if org.github %}
+        <img src="{{ org.github.avatar_url}}">
+        {{ org.github.description }}
+    {% endif %}
 </ul>
 
 {% include 'incl/footer.html' %}
