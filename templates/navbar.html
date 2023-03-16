@@ -22,9 +22,9 @@
         </a>
 
         <div class="navbar-dropdown">
-          {% for org_type in org_types %}
+          {% for org_type, display_name in org_types.items() %}
           <a class="navbar-item" href="{{org_type}}">
-            {{ org_type }}
+            {{ display_name }}
           </a>
           {% endfor %}
         </div>

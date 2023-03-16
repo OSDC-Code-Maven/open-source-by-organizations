@@ -2,7 +2,13 @@ import pathlib
 import yaml
 from jinja2 import Environment, FileSystemLoader
 
-org_types = ['corporation', 'non-profit', 'university', 'other', 'gov']
+org_types = {
+    'corporation': 'Corporations',
+    'non-profit' : 'Non Profits',
+    'university' : 'Universities',
+    'gov'        : 'Governments',
+    'other'      : 'Other',
+}
 
 def render(template, filename, **args):
     templates_dir = pathlib.Path(__file__).parent.joinpath('templates')
@@ -46,7 +52,7 @@ def read_github_organisation(root, organisations):
 
         if not 'type' in data:
             exit(f'type is missing from {yaml_file}')
-        if data['type'] not in org_types:
+        if data['type'] not in org_types.keys():
             exit(f"Invalid type '{data['type']}' in {yaml_file}")
         if not 'name' in data:
             exit(f'name is missing from {yaml_file}')
@@ -76,10 +82,10 @@ def main():
         title = 'Open Source by organisations',
         org_types = org_types,
     )
-    for org_type in org_types:
+    for org_type, display_name in org_types.items():
         render('index.html', out_dir.joinpath(f'{org_type}.html'),
             github_organisations = [org for org in github_organisations if org['type'] == org_type],
-            title = f'Open Source by {org_type}',
+            title = f'Open Source by {display_name}',
             org_types = org_types,
         )
 
