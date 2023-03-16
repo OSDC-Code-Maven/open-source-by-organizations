@@ -5,3 +5,9 @@ org_types:
   gov:         Governments
   other:       Other
 
+countries:
+  - Australia
+  - Bulgaria
+  - Canada
+  - UK
+

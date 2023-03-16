@@ -57,6 +57,10 @@ def read_github_organisation(root, organisations):
         if data['name'] == '':
             exit(f'name is empty in {yaml_file}')
         data['id'] = yaml_file.parts[-1].replace('.yaml', '')
+
+        if 'country' in data:
+            if data['country'] not in config['countries']:
+                exit(f"Country '{data['country']}'  in {yaml_file} is not in our approved list. Either add it to config.yaml or fix the name if it is a different spelling.")
         #print(data)
         github_organisations.append(data)
 
