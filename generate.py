@@ -26,7 +26,7 @@ def read_organisations(root):
         organisations[ yaml_file.parts[-1].replace('.yaml', '') ] = data
     return organisations
 
-def read_github_organisation(root, organisations):
+def read_github_organisations(root, organisations):
     github_organisations = []
     for yaml_file in root.joinpath('github').iterdir():
         if yaml_file.suffix != '.yaml':
@@ -76,7 +76,7 @@ def main():
 
     organisations = read_organisations(root)
     # print(organisations)
-    github_organisations = read_github_organisation(root, organisations)
+    github_organisations = read_github_organisations(root, organisations)
     # print(github_organisations)
 
     for org in github_organisations:
