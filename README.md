@@ -32,3 +32,9 @@ The name of the file is `github/ORGA.yaml` where ORGA is the exact same name as 
 
 Required fields: `name` and either `type` or `org`.
 
+Optional field: `city`, `state`, `country`.
+
+### Valid values
+
+Valid values for the `type` field can be found in the [config.yaml](config.yaml) file as the keys of the `org_types` section.
+
