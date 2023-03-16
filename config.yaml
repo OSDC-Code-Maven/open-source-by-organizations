@@ -1,0 +1,7 @@
+org_types:
+  corporation: Corporations
+  non-profit:  Non Profits
+  university:  Universities
+  gov:         Governments
+  other:       Other
+
