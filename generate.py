@@ -72,11 +72,19 @@ def read_github_organisation(root, organisations):
 def main():
     out_dir = root.joinpath("_site")
     out_dir.mkdir(exist_ok=True)
+    out_dir.joinpath("github").mkdir(exist_ok=True)
 
     organisations = read_organisations(root)
     # print(organisations)
     github_organisations = read_github_organisation(root, organisations)
     # print(github_organisations)
+
+    for org in github_organisations:
+        render('git-organization.html', out_dir.joinpath('github', f"{org['id']}.html"),
+            org = org,
+            title = org['name'],
+            org_types = config['org_types'],
+        )
 
     render('index.html', out_dir.joinpath('index.html'),
         github_organisations = github_organisations,

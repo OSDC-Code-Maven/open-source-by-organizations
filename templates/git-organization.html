@@ -3,14 +3,16 @@
 <h1 class="title">{{title}}</h1>
 
 <ul>
-{% for org in github_organisations %}
     <li>
-        <a href="github/{{org.id}}">{{org.name}}</a>
+        <a href="https://github.com/{{org.id}}">{{org.name}}</a>
         {% if org.org_name %}
         ( {{org.org_name}} )
         {% endif %}
     </li>
-{% endfor %}
+
+    {% if org.country %}
+    <li>{{org.country}}</li>
+    {% endif %}
 </ul>
 
 {% include 'incl/footer.html' %}
