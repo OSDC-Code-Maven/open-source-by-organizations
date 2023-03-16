@@ -10,6 +10,14 @@
         {% endif %}
     </li>
 
+    {% if org.city %}
+    <li>{{org.city}}</li>
+    {% endif %}
+
+    {% if org.state %}
+    <li>{{org.state}}</li>
+    {% endif %}
+
     {% if org.country %}
     <li>{{org.country}}</li>
     {% endif %}
