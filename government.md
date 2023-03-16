@@ -64,15 +64,6 @@ There are separate lists for [Open Source by Higher Education](https://github.co
 * [Västra Götalandsregionen](https://github.com/Vastra-Gotalandsregionen)
 * [Digg - Agency for Digital Government](https://github.com/diggsweden)
 
-
-## UK
-
-* [Government Digital Service](https://github.com/alphagov)
-* [UK Government Data Science](https://github.com/ukgovdatascience)
-* [[Unofficial] UK Government Mirror](https://github.com/uk-gov-mirror)
-* [Scottish Government](https://github.com/scottishgovernment)
-* [Connected Open Government Statistics (COGS)](https://github.com/GSS-Cogs)
-
 ## USA
 
 * [Sandia](https://www.sandia.gov/):
