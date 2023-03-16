@@ -10,10 +10,6 @@ There are separate lists for [Open Source by Higher Education](https://github.co
 * [Queensland Government](https://github.com/qld-gov-au)
 * [Office of Digital Government (DGov)](https://github.com/wagov)
 
-## Bulgaria
-
-* [e-Government Ministry, Republic of Bulgaria](https://github.com/governmentbg)
-
 ## Canada
 
 * [Canadian Municipal GitHub Rankings](https://cityssm.github.io/municipal-github-rankings/)
