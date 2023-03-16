@@ -29,6 +29,19 @@ jobs:
     - name: Setup Pages
       uses: actions/configure-pages@v2
 
+    - name: Get Date
+      id: get-date
+      run: |
+        echo "date=$(/bin/date -u "+%Y%m%d")" >> $GITHUB_OUTPUT
+      shell: bash
+
+    - name: Cache fetched data
+      uses: actions/cache@v3
+      with:
+        path: cache
+        key: osdc-${{ steps.get-date.outputs.date }}
+
+
     - name: Generate HTML Pages
       run: |
         pip install -r requirements.txt -c constraints.txt
