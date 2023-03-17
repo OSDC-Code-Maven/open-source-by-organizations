@@ -130,7 +130,6 @@ def generate_html_pages(github_organisations):
         out_dir.mkdir(exist_ok=True)
 
     out_dir.joinpath("github").mkdir(exist_ok=True)
-
     for org in github_organisations:
         render('git-organization.html', out_dir.joinpath('github', f"{org['id'].lower()}.html"),
             org = org,
@@ -142,12 +141,23 @@ def generate_html_pages(github_organisations):
         title = 'Open Source by organisations',
         org_types = config['org_types'],
     )
+
     for org_type, display_name in config['org_types'].items():
         render('list.html', out_dir.joinpath(f'{org_type}.html'),
             github_organisations = [org for org in github_organisations if org['type'] == org_type],
             title = f'Open Source by {display_name}',
             org_types = config['org_types'],
         )
+
+    out_dir.joinpath("loc").mkdir(exist_ok=True)
+    for display_name in config['countries']:
+        path = display_name.lower().replace(' ', '-')
+        render('list.html', out_dir.joinpath('loc', f'{path}.html'),
+            github_organisations = [org for org in github_organisations if org.get('country', '') == display_name],
+            title = f'Open Source in {display_name}',
+            org_types = config['org_types'],
+        )
+
 
 def main():
     organisations = read_organisations(root)
