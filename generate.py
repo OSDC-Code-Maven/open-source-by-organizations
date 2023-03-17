@@ -15,12 +15,14 @@ config_file = root.joinpath('config.yaml')
 with open(config_file) as fh:
     config = yaml.load(fh, Loader=yaml.Loader)
 
+locations = dict({ display_name.lower().replace(' ', '-') : display_name  for display_name in config['countries']})
+
 
 def render(template, filename, **args):
     templates_dir = pathlib.Path(__file__).parent.joinpath('templates')
     env = Environment(loader=FileSystemLoader(templates_dir), autoescape=True)
     html_template = env.get_template(template)
-    html_content = html_template.render(**args, org_types=config['org_types'])
+    html_content = html_template.render(**args, org_types=config['org_types'], locations=locations)
     with open(filename, 'w') as fh:
         fh.write(html_content)
 
@@ -147,8 +149,7 @@ def generate_html_pages(github_organisations):
         )
 
     out_dir.joinpath("loc").mkdir(exist_ok=True)
-    for display_name in config['countries']:
-        path = display_name.lower().replace(' ', '-')
+    for path, display_name in locations.items():
         render('list.html', out_dir.joinpath('loc', f'{path}.html'),
             github_organisations = [org for org in github_organisations if org.get('country', '') == display_name],
             title = f'Open Source in {display_name}',

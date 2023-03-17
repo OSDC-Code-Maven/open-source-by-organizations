@@ -30,6 +30,21 @@
         </div>
       </div>
 
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Areas
+        </a>
+
+        <div class="navbar-dropdown">
+          {% for path, display_name in locations.items() %}
+          <a class="navbar-item" href="/open-source-by-organizations/loc/{{path}}">
+            {{ display_name }}
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+
+
     </div>
   </div>
 </nav>
