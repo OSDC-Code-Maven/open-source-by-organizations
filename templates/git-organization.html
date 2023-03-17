@@ -24,8 +24,17 @@
 
 
     {% if org.github %}
-        <img src="{{ org.github.avatar_url}}">
+        <img width="60px" src="{{ org.github.avatar_url}}">
+        <div>
         {{ org.github.description }}
+        <br>
+        {{ org.github.name }}
+
+        {% if org.github.blog %}
+            <a href="{{ org.github.blog }}">blog</a>
+        {% endif %}
+
+        </div>
     {% endif %}
 </ul>
 
