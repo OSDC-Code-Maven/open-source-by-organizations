@@ -41,10 +41,12 @@ jobs:
         path: cache
         key: osdc-${{ steps.get-date.outputs.date }}
 
-
-    - name: Generate HTML Pages
+    - name: Install dependencies
       run: |
         pip install -r requirements.txt -c constraints.txt
+
+    - name: Collect data and generate HTML Pages
+      run: |
         python generate.py
 
     - name: Upload artifact
