@@ -139,12 +139,11 @@ def generate_html_pages(github_organisations):
         )
 
     render('index.html', out_dir.joinpath('index.html'),
-        github_organisations = github_organisations,
         title = 'Open Source by organisations',
         org_types = config['org_types'],
     )
     for org_type, display_name in config['org_types'].items():
-        render('index.html', out_dir.joinpath(f'{org_type}.html'),
+        render('list.html', out_dir.joinpath(f'{org_type}.html'),
             github_organisations = [org for org in github_organisations if org['type'] == org_type],
             title = f'Open Source by {display_name}',
             org_types = config['org_types'],

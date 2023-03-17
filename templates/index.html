@@ -2,15 +2,6 @@
 
 <h1 class="title">{{title}}</h1>
 
-<ul>
-{% for org in github_organisations %}
-    <li>
-        <a href="github/{{org.id.lower()}}">{{org.name}}</a>
-        {% if org.org_name %}
-        ( {{org.org_name}} )
-        {% endif %}
-    </li>
-{% endfor %}
-</ul>
+Check out the list of organization by type.
 
 {% include 'incl/footer.html' %}
