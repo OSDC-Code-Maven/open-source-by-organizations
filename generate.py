@@ -80,12 +80,11 @@ def read_github_organisations(root, organisations):
 
     return github_organisations
 
-def get_data_from_github(github_organisations):
+def get_from_github(url, cache_file):
     token = os.environ.get('MY_GITHUB_TOKEN')
     if not token:
         print('Missing MY_GITHUB_TOKEN. Not collecting data from Github')
         return
-    print('Collecting data from Github')
 
     headers = {
         'Accept': 'application/vnd.github+json',
@@ -93,30 +92,33 @@ def get_data_from_github(github_organisations):
         'X-GitHub-Api-Version': '2022-11-28',
     }
 
+    print(f"Fetching from {url}")
+    org_data = requests.get(url, headers=headers).json()
+    # print(org_data)
+    with open(cache_file, 'w') as fh:
+        json.dump(org_data, fh)
+
+
+
+def get_data_from_github(github_organisations):
+
     for org in github_organisations:
         # print(org['id'])
         cache_file = cache.joinpath(org['id'].lower() + '.json')
         if not cache_file.exists():
-            url = f"https://api.github.com/orgs/{org['id']}"
-            print(f"Fetching from {url}")
-            org_data = requests.get(url, headers=headers).json()
-            # print(org_data)
-            with open(cache_file, 'w') as fh:
-                json.dump(org_data, fh)
+            get_from_github(f"https://api.github.com/orgs/{org['id']}", cache_file)
 
-        with open(cache_file) as fh:
-            org['github'] = json.load(fh)
+        if cache_file.exists():
+            with cache_file.open() as fh:
+                org['github'] = json.load(fh)
 
         cache_file = cache.joinpath('repos', org['id'].lower() + '.json')
         if not cache_file.exists():
-            url = f"https://api.github.com/orgs/{org['id']}/repos"
-            print(f"Fetching from {url}")
-            repos = requests.get(url, headers=headers).json()
-            with open(cache_file, 'w') as fh:
-                json.dump(repos, fh)
+            get_from_github(f"https://api.github.com/orgs/{org['id']}/repos", cache_file)
 
-        with open(cache_file) as fh:
-            org['github']['repos'] = json.load(fh)
+        if cache_file.exists():
+            with cache_file.open() as fh:
+                org['github']['repos'] = json.load(fh)
 
 
 def generate_html_pages(github_organisations):
