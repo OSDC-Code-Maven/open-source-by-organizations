@@ -38,6 +38,7 @@
     {% endif %}
 </ul>
 
+{% if org.github %}
 <table class="table is-striped is-hoverable">
   <thead>
     <tr>
@@ -75,6 +76,6 @@
     {% endfor %}
   </tbody>
 </table>
-</table>
+{% endif %}
 
 {% include 'incl/footer.html' %}
