@@ -109,6 +109,15 @@ def get_data_from_github(github_organisations):
 def generate_html_pages(github_organisations):
     out_dir = root.joinpath("_site")
     out_dir.mkdir(exist_ok=True)
+
+    ci = os.environ.get('CI')
+    # In the local environment we imitate the same URL as will be in the deployment on https://osdc.code-maven.com/
+    if not ci:
+        with out_dir.joinpath('index.html').open('w') as fh:
+            fh.write('<a href="/open-source-by-organizations/">site</a>')
+        out_dir = out_dir.joinpath('open-source-by-organizations')
+        out_dir.mkdir(exist_ok=True)
+
     out_dir.joinpath("github").mkdir(exist_ok=True)
 
     for org in github_organisations:
