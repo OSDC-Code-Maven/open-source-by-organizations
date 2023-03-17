@@ -38,4 +38,31 @@
     {% endif %}
 </ul>
 
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th><abbr title="Description">Desc</abbr></th>
+      <th>Fork</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th>Name</th>
+      <th><abbr title="Description">Desc</abbr></th>
+      <th>Fork</th>
+    </tr>
+  </tfoot>
+  <tbody>
+    {% for row in org.github.repos %}
+    <tr>
+      <th>{{ row.name }}</th>
+      <td>{{ row.desciption }}</td>
+      <td>{{ row.fork }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</table>
+
 {% include 'incl/footer.html' %}
