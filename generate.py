@@ -106,17 +106,10 @@ def get_data_from_github(github_organisations):
             org['github'] = json.load(fh)
 
 
-def main():
+def generate_html_pages(github_organisations):
     out_dir = root.joinpath("_site")
     out_dir.mkdir(exist_ok=True)
     out_dir.joinpath("github").mkdir(exist_ok=True)
-
-    organisations = read_organisations(root)
-    # print(organisations)
-    github_organisations = read_github_organisations(root, organisations)
-    # print(github_organisations)
-
-    get_data_from_github(github_organisations)
 
     for org in github_organisations:
         render('git-organization.html', out_dir.joinpath('github', f"{org['id']}.html"),
@@ -136,6 +129,16 @@ def main():
             title = f'Open Source by {display_name}',
             org_types = config['org_types'],
         )
+
+def main():
+    organisations = read_organisations(root)
+    # print(organisations)
+    github_organisations = read_github_organisations(root, organisations)
+    # print(github_organisations)
+
+    get_data_from_github(github_organisations)
+
+    generate_html_pages(github_organisations)
 
 
 main()
