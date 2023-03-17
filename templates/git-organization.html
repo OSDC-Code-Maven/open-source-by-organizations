@@ -38,27 +38,39 @@
     {% endif %}
 </ul>
 
-<table class="table">
+<table class="table is-striped is-hoverable">
   <thead>
     <tr>
       <th>Name</th>
-      <th><abbr title="Description">Desc</abbr></th>
       <th>Fork</th>
+      <th>Pushed</th>
+      <th>Forks</th>
+      <th><abbr title="Issues and Pull Requests">Open</abbr></th>
+      <th>Stars</th>
+      <th>Watches</th>
     </tr>
   </thead>
   <tfoot>
     <tr>
       <th>Name</th>
-      <th><abbr title="Description">Desc</abbr></th>
       <th>Fork</th>
+      <th>Pushed</th>
+      <th>Forks</th>
+      <th><abbr title="Issues and Pull Requests">Open</abbr></th>
+      <th>Stars</th>
+      <th>Watches</th>
     </tr>
   </tfoot>
   <tbody>
     {% for row in org.github.repos %}
     <tr>
-      <th>{{ row.name }}</th>
-      <td>{{ row.desciption }}</td>
+      <th><a href="{{ row.html_url }}">{{ row.name }}</a></th>
       <td>{{ row.fork }}</td>
+      <td>{{ row.pushed_at }}</td>
+      <td>{{ row.forks_count }}</td>
+      <td>{{ row.open_issues_count }}</td>
+      <td>{{ row.stargazers_count }}</td>
+      <td>{{ row.watchers_count }}</td>
     </tr>
     {% endfor %}
   </tbody>
