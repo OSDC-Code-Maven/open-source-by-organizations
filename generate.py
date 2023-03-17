@@ -20,7 +20,7 @@ def render(template, filename, **args):
     templates_dir = pathlib.Path(__file__).parent.joinpath('templates')
     env = Environment(loader=FileSystemLoader(templates_dir), autoescape=True)
     html_template = env.get_template(template)
-    html_content = html_template.render(**args)
+    html_content = html_template.render(**args, org_types=config['org_types'])
     with open(filename, 'w') as fh:
         fh.write(html_content)
 
@@ -134,19 +134,16 @@ def generate_html_pages(github_organisations):
         render('git-organization.html', out_dir.joinpath('github', f"{org['id'].lower()}.html"),
             org = org,
             title = org['name'],
-            org_types = config['org_types'],
         )
 
     render('index.html', out_dir.joinpath('index.html'),
         title = 'Open Source by organisations',
-        org_types = config['org_types'],
     )
 
     for org_type, display_name in config['org_types'].items():
         render('list.html', out_dir.joinpath(f'{org_type}.html'),
             github_organisations = [org for org in github_organisations if org['type'] == org_type],
             title = f'Open Source by {display_name}',
-            org_types = config['org_types'],
         )
 
     out_dir.joinpath("loc").mkdir(exist_ok=True)
@@ -155,7 +152,6 @@ def generate_html_pages(github_organisations):
         render('list.html', out_dir.joinpath('loc', f'{path}.html'),
             github_organisations = [org for org in github_organisations if org.get('country', '') == display_name],
             title = f'Open Source in {display_name}',
-            org_types = config['org_types'],
         )
 
 
