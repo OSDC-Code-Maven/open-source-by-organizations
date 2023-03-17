@@ -38,3 +38,4 @@ Optional field: `city`, `state`, `country`.
 
 Valid values for the `type` field can be found in the [config.yaml](config.yaml) file as the keys of the `org_types` section.
 
+
