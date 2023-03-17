@@ -4,12 +4,6 @@ Somewhat surprisingly there are many local and country-wise governments around t
 
 There are separate lists for [Open Source by Higher Education](https://github.com/szabgab/open-source-by-higher-education) and [Open Source by Corporations](https://github.com/szabgab/open-source-by-corporations)
 
-## Australia
-
-* [ACT Government](https://github.com/actgov)
-* [Queensland Government](https://github.com/qld-gov-au)
-* [Office of Digital Government (DGov)](https://github.com/wagov)
-
 ## Canada
 
 * [Canadian Municipal GitHub Rankings](https://cityssm.github.io/municipal-github-rankings/)
