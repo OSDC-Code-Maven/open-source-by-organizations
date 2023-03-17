@@ -132,7 +132,7 @@ def generate_html_pages(github_organisations):
     out_dir.joinpath("github").mkdir(exist_ok=True)
 
     for org in github_organisations:
-        render('git-organization.html', out_dir.joinpath('github', f"{org['id']}.html"),
+        render('git-organization.html', out_dir.joinpath('github', f"{org['id'].lower()}.html"),
             org = org,
             title = org['name'],
             org_types = config['org_types'],

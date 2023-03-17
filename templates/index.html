@@ -5,7 +5,7 @@
 <ul>
 {% for org in github_organisations %}
     <li>
-        <a href="github/{{org.id}}">{{org.name}}</a>
+        <a href="github/{{org.id.lower()}}">{{org.name}}</a>
         {% if org.org_name %}
         ( {{org.org_name}} )
         {% endif %}
