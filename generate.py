@@ -9,6 +9,7 @@ root = pathlib.Path(__file__).parent
 
 cache = root.joinpath('cache')
 cache.mkdir(exist_ok=True)
+cache.joinpath('repos').mkdir(exist_ok=True)
 
 config_file = root.joinpath('config.yaml')
 with open(config_file) as fh:
@@ -95,15 +96,25 @@ def get_data_from_github(github_organisations):
         cache_file = cache.joinpath(org['id'].lower() + '.json')
         if not cache_file.exists():
             url = f"https://api.github.com/orgs/{org['id']}"
-            print(f"Fetching from url")
+            print(f"Fetching from {url}")
             org_data = requests.get(url, headers=headers).json()
-            # print(org_data)
             # print(org_data)
             with open(cache_file, 'w') as fh:
                 json.dump(org_data, fh)
 
         with open(cache_file) as fh:
             org['github'] = json.load(fh)
+
+        cache_file = cache.joinpath('repos', org['id'].lower() + '.json')
+        if not cache_file.exists():
+            url = f"https://api.github.com/orgs/{org['id']}/repos"
+            print(f"Fetching from {url}")
+            repos = requests.get(url, headers=headers).json()
+            with open(cache_file, 'w') as fh:
+                json.dump(repos, fh)
+
+        with open(cache_file) as fh:
+            org['github']['repos'] = json.load(fh)
 
 
 def generate_html_pages(github_organisations):
