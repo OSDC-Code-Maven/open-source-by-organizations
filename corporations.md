@@ -119,7 +119,6 @@ We are moving the entries to yaml files
 * https://github.com/Youtube
 * https://github.com/Zapier
 * https://github.com/Zappos
-* https://github.com/Zoom
 
 * https://github.com/IntelliTree
 * https://github.com/vanstyn (Owner of https://www.intellitree.com/)
