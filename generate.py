@@ -82,7 +82,7 @@ def get_data_from_github(github_organisations):
     if not token:
         print('Missing MY_GITHUB_TOKEN. Not collecting data from Github')
         return
-    print('Collecting data')
+    print('Collecting data from Github')
 
     headers = {
         'Accept': 'application/vnd.github+json',
@@ -91,11 +91,11 @@ def get_data_from_github(github_organisations):
     }
 
     for org in github_organisations:
-        print(org['id'])
+        # print(org['id'])
         cache_file = cache.joinpath(org['id'].lower() + '.json')
         if not cache_file.exists():
             url = f"https://api.github.com/orgs/{org['id']}"
-            # print(url)
+            print(f"Fetching from url")
             org_data = requests.get(url, headers=headers).json()
             # print(org_data)
             # print(org_data)
