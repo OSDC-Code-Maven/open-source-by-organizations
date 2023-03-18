@@ -80,11 +80,6 @@ We are moving the entries to yaml files
 * https://github.com/Salesforce
 * https://github.com/SalesforceFoundation
 * https://github.com/Seaber-io
-* https://github.com/ServiceNow
-* https://github.com/SparkFun
-* https://github.com/Spotify
-* https://github.com/Square
-* https://github.com/Stripe
 * https://github.com/SUSE
 * https://github.com/openSUSE
 * https://github.com/Synopsys-sig
@@ -97,9 +92,6 @@ We are moving the entries to yaml files
 * https://github.com/Tumblr
 * https://github.com/TikTok
 * https://github.com/Twitter
-* https://github.com/Uber
-* https://github.com/Ubuntu
-* https://github.com/Verizon
 * https://github.com/Visa
 * https://github.com/VMware
 * https://github.com/VolksWagen
