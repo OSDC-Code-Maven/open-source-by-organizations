@@ -70,7 +70,6 @@ We are moving the entries to yaml files
 * https://github.com/PuppetLabs
 * [Qualcomm Atheros](https://github.com/qca)
 * https://github.com/realpython
-* https://github.com/Reddit
 * https://github.com/RedHatOfficial
 * https://github.com/redhat-developer
 * https://github.com/redhat-cop
@@ -78,19 +77,10 @@ We are moving the entries to yaml files
 * https://github.com/redhat-developer-demos
 * https://github.com/redhat-scholars
 * https://github.com/redhat-performance
-* https://github.com/Robinhood
 * https://github.com/Salesforce
 * https://github.com/SalesforceFoundation
-* https://github.com/Samsung
-* https://github.com/SAP
-* https://github.com/SauceLabs
 * https://github.com/Seaber-io
 * https://github.com/ServiceNow
-* https://github.com/Shopify
-* https://github.com/Siemens
-* https://github.com/SiemensIndustrialEdgeITA (Siemens?)
-* https://github.com/Siemens-Healthineers
-* [SOTEC GmbH & Co KG](https://github.com/sotec-iot)
 * https://github.com/SparkFun
 * https://github.com/Spotify
 * https://github.com/Square
