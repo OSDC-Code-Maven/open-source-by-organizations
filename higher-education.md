@@ -287,9 +287,6 @@ Moving to YAML files
 * https://github.com/rutgers-apl
 * https://github.com/Rutgers-CG
 
-## [Emerson College](https://emerson.edu/) Boston, MA, USA
-
-* https://github.com/emersonit
 
 ## [The University of Texas at Austin](https://www.utexas.edu/), USA
 
@@ -302,10 +299,6 @@ Moving to YAML files
 * https://github.com/UT-Austin-Bootcamp-Proj1-Group-D
 * https://github.com/UT-Austin-RobIn
 
-## [Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen](https://gwdg.de) Germany
-
-* https://github.com/gwdg
-* https://github.com/gwdgls
 
 ## [Freie Universität](https://www.fu-berlin.de/) Berlin, Germany
 
