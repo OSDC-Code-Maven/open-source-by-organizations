@@ -28,8 +28,6 @@ We are moving the entries to yaml files
 * https://github.com/Huawei-noah
 * https://github.com/HuaweiCloud
 * https://github.com/HuaweiCodeLabs
-* https://github.com/Intel
-* https://github.com/IntelLabs
 * https://github.com/Intuit
 * https://github.com/LinkedIn
 * https://github.com/LinkedInLearning
@@ -56,7 +54,6 @@ We are moving the entries to yaml files
 * https://github.com/Netflix
 * https://github.com/nginx
 * https://github.com/npm
-* https://github.com/Nvidia
 * https://github.com/OpenCageData
 * https://github.com/Oracle
 * https://github.com/PacificBiosciences
@@ -87,7 +84,6 @@ We are moving the entries to yaml files
 * https://github.com/T-MobileNL
 * https://github.com/Tencent/
 * https://github.com/TencentCloud/
-* https://github.com/Teslamotors
 * https://github.com/TexasInstruments
 * https://github.com/Tumblr
 * https://github.com/TikTok
