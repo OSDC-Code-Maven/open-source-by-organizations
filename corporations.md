@@ -51,13 +51,11 @@ We are moving the entries to yaml files
 * https://github.com/MicrosoftArchive
 * https://github.com/mitre
 * https://github.com/nanoporetech
-* https://github.com/Netflix
 * https://github.com/nginx
 * https://github.com/npm
 * https://github.com/OpenCageData
 * https://github.com/Oracle
 * https://github.com/PacificBiosciences
-* https://github.com/PayPal
 * https://github.com/Philips-internal
 * https://github.com/Philips-labs
 * https://github.com/Philips-EMR
