@@ -3,7 +3,7 @@ org_types:
   non-profit:  Non Profits
   university:  Universities
   gov:         Governments
-  other:       Other
+  other:       Other organisations
 
 countries:
   - Australia

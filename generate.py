@@ -144,14 +144,15 @@ def generate_html_pages(github_organisations):
             org = org,
             title = org['name'],
         )
-
-    render('index.html', out_dir.joinpath('index.html'),
-        title = 'Open Source by organisations',
-    )
+    stats = {
+        'by_type': {}
+    }
 
     for org_type, display_name in config['org_types'].items():
+        organisations = [org for org in github_organisations if org['type'] == org_type]
+        stats['by_type'][org_type] = len(organisations)
         render('list.html', out_dir.joinpath(f'{org_type}.html'),
-            github_organisations = [org for org in github_organisations if org['type'] == org_type],
+            github_organisations = organisations,
             title = f'Open Source by {display_name}',
         )
 
@@ -161,6 +162,12 @@ def generate_html_pages(github_organisations):
             github_organisations = [org for org in github_organisations if org.get('country', '') == display_name],
             title = f'Open Source in {display_name}',
         )
+
+    render('index.html', out_dir.joinpath('index.html'),
+        title = 'Open Source by organisations',
+        stats = stats,
+    )
+
 
 
 def main():

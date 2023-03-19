@@ -2,6 +2,10 @@
 
 <h1 class="title">{{title}}</h1>
 
-Check out the lists by organization by type or by the location of the Government or University.
+
+Currently there are {% for org_type, display_name in org_types.items() %}
+   {{ stats.by_type[org_type] }} <a href="/open-source-by-organizations/{{org_type}}">{{ display_name }}</a>
+    {%- if not loop.last -%}, {% endif -%} listed on our site.
+{% endfor %}
 
 {% include 'incl/footer.html' %}
