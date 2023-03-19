@@ -5,6 +5,8 @@ on:
   pull_request:
   workflow_dispatch:
   workflow_call:
+  schedule:
+    - cron: '1 1 * * *'
 
 env:
     MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
