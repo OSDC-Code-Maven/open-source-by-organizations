@@ -34,7 +34,9 @@
             <a href="{{ org.github.blog }}">blog</a>
         {% endif %}
         <br>
-        Repos: {{ org.github.repos | length }}
+        Public Repos: {{ org.github.public_repos }}
+        <br>
+        Listed Repos: {{ org.github.repos | length }}
 
         </div>
     {% endif %}
