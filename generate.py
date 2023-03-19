@@ -81,7 +81,7 @@ def read_github_organisations(root, organisations):
 
     return github_organisations
 
-def get_from_github(url, cache_file):
+def get_from_github(url, cache_file, pages=False):
     token = os.environ.get('MY_GITHUB_TOKEN')
     if not token:
         print('Missing MY_GITHUB_TOKEN. Not collecting data from Github')
@@ -93,11 +93,27 @@ def get_from_github(url, cache_file):
         'X-GitHub-Api-Version': '2022-11-28',
     }
 
-    print(f"Fetching from {url}")
-    org_data = requests.get(url, headers=headers).json()
-    # print(org_data)
+    if pages:
+        per_page = 100 # default is 30 max is 100
+        page = 1
+        all_data = []
+        while True:
+            real_url = f"{url}?per_page={per_page}&page={page}"
+            print(f"Fetching from {real_url}")
+            data = requests.get(real_url, headers=headers).json()
+            # print(len(data))
+            all_data.extend(data)
+            page += 1
+            if len(data) < per_page:
+                break
+    else:
+        print(f"Fetching from {url}")
+        all_data = requests.get(url, headers=headers).json()
+
+
+    # print(data)
     with open(cache_file, 'w') as fh:
-        json.dump(org_data, fh)
+        json.dump(all_data, fh)
 
 
 
@@ -113,9 +129,10 @@ def get_data_from_github(github_organisations):
             with cache_file.open() as fh:
                 org['github'] = json.load(fh)
 
+        # Get list of repos
         cache_file = cache.joinpath('repos', org['id'].lower() + '.json')
         if not cache_file.exists():
-            get_from_github(f"https://api.github.com/orgs/{org['id']}/repos", cache_file)
+            get_from_github(f"https://api.github.com/orgs/{org['id']}/repos", cache_file, pages=True)
 
         if cache_file.exists():
             with cache_file.open() as fh:
