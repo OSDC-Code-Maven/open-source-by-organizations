@@ -129,6 +129,10 @@ def get_data_from_github(github_organisations):
             with cache_file.open() as fh:
                 org['github'] = json.load(fh)
 
+        if org['github'].get('message', '') == "Not Found":
+            print("Not Found")
+            continue
+
         # Get list of repos
         cache_file = cache.joinpath('repos', org['id'].lower() + '.json')
         if not cache_file.exists():
