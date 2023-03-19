@@ -2,6 +2,7 @@ import json
 import os
 import requests
 import pathlib
+import shutil
 import yaml
 from jinja2 import Environment, FileSystemLoader
 
@@ -132,6 +133,10 @@ def generate_html_pages(github_organisations):
             fh.write('<a href="/open-source-by-organizations/">site</a>')
         out_dir = out_dir.joinpath('open-source-by-organizations')
         out_dir.mkdir(exist_ok=True)
+
+    js_dir = out_dir.joinpath('js')
+    js_dir.mkdir(exist_ok=True)
+    shutil.copy(pathlib.Path(__file__).parent.joinpath('js', 'osdc.js'), js_dir.joinpath('osdc.js'))
 
     out_dir.joinpath("github").mkdir(exist_ok=True)
     for org in github_organisations:
