@@ -2,15 +2,21 @@
 
 <h1 class="title">{{title}}</h1>
 
-<ul>
-{% for org in github_organisations %}
-    <li>
-        <a href="github/{{org.id.lower()}}">{{org.name}}</a>
-        {% if org.org_name %}
-        ( {{org.org_name}} )
-        {% endif %}
-    </li>
-{% endfor %}
-</ul>
+<table class="table is-striped is-hoverable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Repos</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for org in github_organisations %}
+      <tr>
+        <th><a href="github/{{org.id.lower()}}">{{org.name}}</a> {% if org.org_name %}( {{org.org_name}} ){% endif %}</th>
+        <td>{{ org.github.repos | length }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
 {% include 'incl/footer.html' %}
