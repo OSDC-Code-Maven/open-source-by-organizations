@@ -34,9 +34,11 @@
             <a href="{{ org.github.blog }}">blog</a>
         {% endif %}
         <br>
-        Public Repos: {{ org.github.public_repos }}
-        <br>
-        Listed Repos: {{ org.github.repos | length }}
+        Public Repos: {{ org.github.public_repos }}<br>
+        Listed Repos: {{ org.github.repos | length }}<br>
+        Followers: {{ org.github.followers }}<br>
+        Created: {{ org.github.created_at }}<br>
+        Updated: {{ org.github.updated_at }}<br>
 
         </div>
     {% endif %}
