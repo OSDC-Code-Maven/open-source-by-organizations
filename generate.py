@@ -122,6 +122,8 @@ def get_from_github(url, cache_file, expected=0, pages=False):
     with open(cache_file, 'w') as fh:
         json.dump(all_data, fh)
 
+    return all_data
+
 
 
 def get_data_from_github(github_organisations):
@@ -130,7 +132,11 @@ def get_data_from_github(github_organisations):
         # print(org['id'])
         cache_file = cache.joinpath(org['id'].lower() + '.json')
         if not cache_file.exists():
-            get_from_github(f"https://api.github.com/orgs/{org['id']}", cache_file)
+            data = get_from_github(f"https://api.github.com/orgs/{org['id']}", cache_file)
+            if data.get('message', '') == 'Not Found':
+                # Try, maybe it is a user-account
+                data = get_from_github(f"https://api.github.com/users/{org['id']}", cache_file)
+                #print(data)
 
         if cache_file.exists():
             with cache_file.open() as fh:
@@ -143,7 +149,12 @@ def get_data_from_github(github_organisations):
         # Get list of repos
         cache_file = cache.joinpath('repos', org['id'].lower() + '.json')
         if not cache_file.exists():
-            get_from_github(f"https://api.github.com/orgs/{org['id']}/repos", cache_file, expected=org['github']['public_repos'], pages=True)
+            data = get_from_github(f"https://api.github.com/orgs/{org['id']}/repos", cache_file, expected=org['github']['public_repos'], pages=True)
+            if data == ['message', 'documentation_url']:
+                # Try, maybe it is a user-account
+                data = get_from_github(f"https://api.github.com/users/{org['id']}/repos", cache_file, expected=org['github']['public_repos'], pages=True)
+
+            print(data)
 
         if cache_file.exists():
             with cache_file.open() as fh:
