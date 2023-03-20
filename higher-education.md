@@ -245,11 +245,6 @@ Moving to YAML files
 * https://github.com/datamllab
 * https://github.com/rice-eclipse
 
-## [Swarthmore College](https://www.swarthmore.edu/), Swarthmore, Pennsylvania, USA
-
-* https://github.com/Swarthmore
-* https://github.com/swat-sccs
-
 ##  [University of Pennsylvania](https://www.upenn.edu/), Philadelphia, Pennsylvania, USA
 
 * https://github.com/upenn
