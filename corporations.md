@@ -126,3 +126,4 @@ For these the above suggestion might be even more relevant, but I felt they dese
 * https://github.com/carla-simulator  [Open-source simulator for autonomous driving research](https://carla.org/)
 
 
+https://github.com/Ginger-Automation by Amdocs, how shall we add this?
