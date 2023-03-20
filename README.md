@@ -38,3 +38,57 @@ Optional field: `city`, `state`, `country`.
 
 Valid values for the `type` field can be found in the [config.yaml](config.yaml) file as the keys of the `org_types` section.
 
+## Local development
+
+* Clone repo
+
+```
+git clone git@github.com:OSDC-Code-Maven/open-source-by-organizations.git
+cd open-source-by-organizations
+```
+
+* Setup virtualenv end install python dependencies
+
+```
+virtualenv -p python3 venv
+source venv/bin/activate
+pip install -r requirements.txt -c constraints.txt
+```
+
+* Generate GITHUB token
+    * See the [documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+
+    * Visit [GitHub](https://github.com/) (and log in)
+    * Go to [Settings](https://github.com/settings/profile)
+    * Go to [Developer Settings](https://github.com/settings/apps)
+    * Personal Access tokens / Tokens
+    * Generate New token
+    * Enable following: notifications, read:org, read:project, read:user, user:email
+
+Then create the environment variable with the value:
+
+```
+export MY_GITHUB_TOKEN=.....
+```
+
+* Collect **all** the data and generate web site. The following can take several minutest. It might be better to specify a few YAML files and only work with those as in the next command.
+
+```
+python generate.py
+```
+
+* Collect only information only about these two github organizations.
+
+```
+python generate.py github/bioinform.yaml github/calgaryml.yaml
+```
+
+* Start the local web server
+
+```
+./app.py
+```
+
+Visit the site at http://localhost:5000/
+
+
