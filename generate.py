@@ -130,7 +130,7 @@ def get_data_from_github(github_organisations):
                 org['github'] = json.load(fh)
 
         if org['github'].get('message', '') == "Not Found":
-            print("Not Found")
+            print(f"Not Found {org['id']}")
             continue
 
         # Get list of repos
