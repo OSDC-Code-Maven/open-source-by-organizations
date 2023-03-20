@@ -11,14 +11,6 @@ Moving to YAML files
 
 * [Applied Geophysics Research](https://github.com/GeoCode-polymtl)
 
-## [BME - Budapest University of Technology and Economics](https://www.bme.hu/), Budapest, Hungary
-
-* https://github.com/bmeaut
-* https://github.com/BME-FRT
-* https://github.com/bme-kjit
-* https://github.com/bi-labor
-* https://github.com/bmetrafficlab
-
 ## [Sztaki - Institute for Computer Science and Control](https://www.sztaki.hu/), Budapest, Hungary
 
 * https://github.com/sztaki-hu
