@@ -11,12 +11,6 @@ Moving to YAML files
 
 * [Applied Geophysics Research](https://github.com/GeoCode-polymtl)
 
-## [ELTE Eötvös Loránd University](https://www.elte.hu/), Budapest, Hungary
-
-* https://github.com/eltecnl
-* https://github.com/eltevo
-* https://github.com/elte-fi
-
 ## [BME - Budapest University of Technology and Economics](https://www.bme.hu/), Budapest, Hungary
 
 * https://github.com/bmeaut
