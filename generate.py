@@ -1,3 +1,4 @@
+import argparse
 import json
 import os
 import requests
@@ -39,9 +40,15 @@ def read_organisations(root):
     return organisations
 
 
-def read_github_organisations(root, organisations):
+def read_github_organisations(root, files, organisations):
+    pathes = []
+    if files:
+        for file in files:
+            pathes.append(pathlib.Path(file))
+    else:
+        pathes = root.joinpath('github').iterdir()
     github_organisations = []
-    for yaml_file in root.joinpath('github').iterdir():
+    for yaml_file in pathes:
         if yaml_file.suffix != '.yaml':
             exit(f"Invalid file name {yaml_file}")
         # print(yaml_file)
@@ -190,11 +197,17 @@ def generate_html_pages(github_organisations):
     )
 
 
+def get_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('files',  help="list of files to process",  nargs="*")
+    args = parser.parse_args()
+    return args
 
 def main():
+    args = get_args()
     organisations = read_organisations(root)
     # print(organisations)
-    github_organisations = read_github_organisations(root, organisations)
+    github_organisations = read_github_organisations(root, args.files, organisations)
     # print(github_organisations)
 
     get_data_from_github(github_organisations)
