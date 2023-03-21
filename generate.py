@@ -13,7 +13,8 @@ root = pathlib.Path(__file__).parent
 
 @functools.cache
 def cache():
-    cache_dir = root.joinpath('cache')
+    cache_dir_str = os.environ.get('OSBO_CACHE')
+    cache_dir = pathlib.Path(cache_dir_str) if cache_dir_str else root.joinpath('cache')
     cache_dir.mkdir(exist_ok=True)
     cache_dir.joinpath('repos').mkdir(exist_ok=True)
     return cache_dir
@@ -42,7 +43,8 @@ def render(template, filename, **args):
 
 def read_organisations(root):
     organisations = {}
-    for yaml_file in root.joinpath('organisations').iterdir():
+    org_path = os.environ.get('OSBO_ORG', root.joinpath('organisations'))
+    for yaml_file in org_path.iterdir():
         if yaml_file.suffix != '.yaml':
             exit(f"Invalid file name {yaml_file}")
         with open(yaml_file) as fh:
@@ -57,7 +59,9 @@ def read_github_organisations(root, files, organisations):
         for file in files:
             pathes.append(pathlib.Path(file))
     else:
-        pathes = root.joinpath('github').iterdir()
+        github_path_str = os.environ.get('OSBO_GITHUB')
+        github_path = pathlib.Path(github_path_str) if github_path_str else root.joinpath('github')
+        pathes = github_path.iterdir()
     github_organisations = []
     for yaml_file in pathes:
         if yaml_file.suffix != '.yaml':
@@ -177,7 +181,8 @@ def get_data_from_github(github_organisations):
 
 
 def generate_html_pages(github_organisations):
-    out_dir = root.joinpath("_site")
+    out_dir_str = os.environ.get('OSBO_SITE')
+    out_dir = pathlib.Path(out_dir_str) if out_dir_str else root.joinpath("_site")
     out_dir.mkdir(exist_ok=True)
 
     ci = os.environ.get('CI')

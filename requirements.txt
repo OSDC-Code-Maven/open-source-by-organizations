@@ -3,3 +3,5 @@ jinja2
 PyYAML
 requests
 pytest
+
+git+https://github.com/szabgab/capture.git
