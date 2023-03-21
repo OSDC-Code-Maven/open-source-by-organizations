@@ -1,2 +1,3 @@
 --ignore-dir=cache
 --ignore-dir=venv
+--ignore-dir=_site
