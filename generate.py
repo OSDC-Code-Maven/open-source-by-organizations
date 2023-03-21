@@ -229,5 +229,6 @@ def main():
 
     generate_html_pages(github_organisations)
 
+if __name__ == "__main__":
+    main()
 
-main()
