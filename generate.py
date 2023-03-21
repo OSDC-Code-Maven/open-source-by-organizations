@@ -154,7 +154,7 @@ def get_data_from_github(github_organisations):
                 # Try, maybe it is a user-account
                 data = get_from_github(f"https://api.github.com/users/{org['id']}/repos", cache_file, expected=org['github']['public_repos'], pages=True)
 
-            print(data)
+            #print(data)
 
         if cache_file.exists():
             with cache_file.open() as fh:
