@@ -26,6 +26,7 @@ def config():
         conf = yaml.load(fh, Loader=yaml.Loader)
     return conf
 
+@functools.cache
 def locations():
     return dict({ display_name.lower().replace(' ', '-') : display_name  for display_name in config()['countries']})
 
