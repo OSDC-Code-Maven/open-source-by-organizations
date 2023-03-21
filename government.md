@@ -29,9 +29,6 @@ There are separate lists for [Open Source by Higher Education](https://github.co
 * [Developers Italia](https://github.com/italia)
 * [Autonomous Province of Bozen-Bolzano - South Tyrol](https://github.com/provbz)
 
-## Japan
-
-* [Tokyo Metropolitan Government](https://github.com/tokyo-metropolitan-gov)
 
 ## Korea
 
