@@ -26,7 +26,7 @@ There are separate lists for [Open Source by Higher Education](https://github.co
 
 ## Italy
 
-* [Developers Italia](https://github.com/italia)
+
 * [Autonomous Province of Bozen-Bolzano - South Tyrol](https://github.com/provbz)
 
 ## Japan
