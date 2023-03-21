@@ -30,6 +30,7 @@ There are separate lists for [Open Source by Higher Education](https://github.co
 * [Kurdistan Regional Government](https://github.com/ditkrg)
 
 ## Singapore
+* [Open Government Products](https://github.com/opengovsg)
 * [Government Digital Services, Singapore](https://github.com/GovTechSG)
 
 ## Sri Lanka
