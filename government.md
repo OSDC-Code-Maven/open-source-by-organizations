@@ -14,9 +14,12 @@ There are separate lists for [Open Source by Higher Education](https://github.co
 * [Province of British Columbia Corporate](https://github.com/bcgov-c)
 * [The City of Sault Ste. Marie in the Province of Ontario](https://github.com/cityssm)
 * [Government of Ontario | Gouvernement de l'Ontario](https://github.com/ongov)
-* [Government of Alberta](https://github.com/GovAlta)
 * [Government of Yukon](https://github.com/ytgov)
 
+
+## Japan
+
+* [Tokyo Metropolitan Government](https://github.com/tokyo-metropolitan-gov)
 
 
 
