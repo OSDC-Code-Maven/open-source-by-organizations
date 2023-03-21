@@ -16,11 +16,6 @@ There are separate lists for [Open Source by Higher Education](https://github.co
 * [Government of Ontario | Gouvernement de l'Ontario](https://github.com/ongov)
 * [Government of Yukon](https://github.com/ytgov)
 
-
-## Japan
-
-* [Tokyo Metropolitan Government](https://github.com/tokyo-metropolitan-gov)
-
 ## Korea
 
 * [Korean e-Government Standard Framework Center](https://github.com/eGovFramework)
