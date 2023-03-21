@@ -6,6 +6,7 @@ import pathlib
 import shutil
 import yaml
 from jinja2 import Environment, FileSystemLoader
+import functools
 
 root = pathlib.Path(__file__).parent
 
@@ -13,6 +14,8 @@ cache = root.joinpath('cache')
 cache.mkdir(exist_ok=True)
 cache.joinpath('repos').mkdir(exist_ok=True)
 
+
+@functools.cache
 def config():
     config_file = root.joinpath('config.yaml')
     with open(config_file) as fh:
