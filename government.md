@@ -21,14 +21,6 @@ There are separate lists for [Open Source by Higher Education](https://github.co
 
 * [Tokyo Metropolitan Government](https://github.com/tokyo-metropolitan-gov)
 
-
-
-## Italy
-
-## Japan
-
-* [Tokyo Metropolitan Government](https://github.com/tokyo-metropolitan-gov)
-
 ## Korea
 
 * [Korean e-Government Standard Framework Center](https://github.com/eGovFramework)
