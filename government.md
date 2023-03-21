@@ -15,11 +15,16 @@ There are separate lists for [Open Source by Higher Education](https://github.co
 * [The City of Sault Ste. Marie in the Province of Ontario](https://github.com/cityssm)
 * [Government of Ontario | Gouvernement de l'Ontario](https://github.com/ongov)
 * [Government of Alberta](https://github.com/GovAlta)
-* [Government of Canada - Gouvernement du Canada](https://github.com/canada-ca)
 * [Government of Yukon](https://github.com/ytgov)
 
 
 
+
+## Italy
+
+## Japan
+
+* [Tokyo Metropolitan Government](https://github.com/tokyo-metropolitan-gov)
 
 ## Korea
 
