@@ -20,15 +20,6 @@ There are separate lists for [Open Source by Higher Education](https://github.co
 
 
 
-## Germany
-
-* [eGovernment Cologne](https://github.com/eGovCologne)
-
-## Italy
-
-* [Developers Italia](https://github.com/italia)
-* [Autonomous Province of Bozen-Bolzano - South Tyrol](https://github.com/provbz)
-
 
 ## Korea
 
