@@ -142,6 +142,10 @@ def get_data_from_github(github_organisations):
             with cache_file.open() as fh:
                 org['github'] = json.load(fh)
 
+        if 'github' not in org:
+            print("github not in org data")
+            continue
+
         if org['github'].get('message', '') == "Not Found":
             print(f"Not Found {org['id']}")
             continue
