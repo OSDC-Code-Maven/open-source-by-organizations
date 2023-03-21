@@ -19,9 +19,6 @@ There are separate lists for [Open Source by Higher Education](https://github.co
 * [Government of Yukon](https://github.com/ytgov)
 
 
-## Estonia
-
-* [E-government building blocks](https://github.com/e-gov)
 
 ## Germany
 
