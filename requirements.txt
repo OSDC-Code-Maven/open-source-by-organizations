@@ -2,3 +2,4 @@ Flask
 jinja2
 PyYAML
 requests
+pytest
