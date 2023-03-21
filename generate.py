@@ -13,19 +13,21 @@ cache = root.joinpath('cache')
 cache.mkdir(exist_ok=True)
 cache.joinpath('repos').mkdir(exist_ok=True)
 
-config_file = root.joinpath('config.yaml')
-with open(config_file) as fh:
-    config = yaml.load(fh, Loader=yaml.Loader)
+def config():
+    config_file = root.joinpath('config.yaml')
+    with open(config_file) as fh:
+        conf = yaml.load(fh, Loader=yaml.Loader)
+    return conf
 
 def locations():
-    return dict({ display_name.lower().replace(' ', '-') : display_name  for display_name in config['countries']})
+    return dict({ display_name.lower().replace(' ', '-') : display_name  for display_name in config()['countries']})
 
 
 def render(template, filename, **args):
     templates_dir = pathlib.Path(__file__).parent.joinpath('templates')
     env = Environment(loader=FileSystemLoader(templates_dir), autoescape=True)
     html_template = env.get_template(template)
-    html_content = html_template.render(**args, org_types=config['org_types'], locations=locations())
+    html_content = html_template.render(**args, org_types=config()['org_types'], locations=locations())
     with open(filename, 'w') as fh:
         fh.write(html_content)
 
@@ -71,7 +73,7 @@ def read_github_organisations(root, files, organisations):
 
         if not 'type' in data:
             exit(f'type is missing from {yaml_file}')
-        if data['type'] not in config['org_types'].keys():
+        if data['type'] not in config()['org_types'].keys():
             exit(f"Invalid type '{data['type']}' in {yaml_file}")
         if not 'name' in data:
             exit(f'name is missing from {yaml_file}')
@@ -80,7 +82,7 @@ def read_github_organisations(root, files, organisations):
         data['id'] = yaml_file.parts[-1].replace('.yaml', '')
 
         if 'country' in data:
-            if data['country'] not in config['countries']:
+            if data['country'] not in config()['countries']:
                 exit(f"Country '{data['country']}'  in {yaml_file} is not in our approved list. Either add it to config.yaml or fix the name if it is a different spelling.")
         #print(data)
         github_organisations.append(data)
@@ -192,7 +194,7 @@ def generate_html_pages(github_organisations):
         'by_type': {}
     }
 
-    for org_type, display_name in config['org_types'].items():
+    for org_type, display_name in config()['org_types'].items():
         organisations = [org for org in github_organisations if org['type'] == org_type]
         stats['by_type'][org_type] = len(organisations)
         render('list.html', out_dir.joinpath(f'{org_type}.html'),
