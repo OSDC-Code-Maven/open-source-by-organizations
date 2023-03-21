@@ -19,6 +19,10 @@ There are separate lists for [Open Source by Higher Education](https://github.co
 * [Government of Yukon](https://github.com/ytgov)
 
 
+## Japan
+
+* [Tokyo Metropolitan Government](https://github.com/tokyo-metropolitan-gov)
+
 
 
 ## Korea
