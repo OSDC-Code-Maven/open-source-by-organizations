@@ -10,9 +10,13 @@ import functools
 
 root = pathlib.Path(__file__).parent
 
-cache = root.joinpath('cache')
-cache.mkdir(exist_ok=True)
-cache.joinpath('repos').mkdir(exist_ok=True)
+
+@functools.cache
+def cache():
+    cache_dir = root.joinpath('cache')
+    cache_dir.mkdir(exist_ok=True)
+    cache_dir.joinpath('repos').mkdir(exist_ok=True)
+    return cache_dir
 
 
 @functools.cache
@@ -136,7 +140,7 @@ def get_data_from_github(github_organisations):
 
     for org in github_organisations:
         # print(org['id'])
-        cache_file = cache.joinpath(org['id'].lower() + '.json')
+        cache_file = cache().joinpath(org['id'].lower() + '.json')
         if not cache_file.exists():
             data = get_from_github(f"https://api.github.com/orgs/{org['id']}", cache_file)
             if data is not None and data.get('message', '') == 'Not Found':
@@ -157,7 +161,7 @@ def get_data_from_github(github_organisations):
             continue
 
         # Get list of repos
-        cache_file = cache.joinpath('repos', org['id'].lower() + '.json')
+        cache_file = cache().joinpath('repos', org['id'].lower() + '.json')
         if not cache_file.exists():
             data = get_from_github(f"https://api.github.com/orgs/{org['id']}/repos", cache_file, expected=org['github']['public_repos'], pages=True)
             if data is not None and data == ['message', 'documentation_url']:
