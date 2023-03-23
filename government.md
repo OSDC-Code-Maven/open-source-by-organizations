@@ -7,7 +7,6 @@ There are separate lists for [Open Source by Higher Education](https://github.co
 ## Canada
 
 * [Canadian Municipal GitHub Rankings](https://cityssm.github.io/municipal-github-rankings/)
-* [Province of Alberta](https://github.com/abgov)
 * [Province of British Columbia](https://github.com/bcgov/)
 * [Province of British Columbia DevOps ](https://github.com/BCDevOps)
 * [Province of British Columbia Social Sector](https://github.com/bcgov-isd)
