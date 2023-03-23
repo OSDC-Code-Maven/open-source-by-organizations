@@ -23,7 +23,6 @@ We are moving the entries to yaml files
 * https://github.com/HashiCorp
 * https://github.com/HashiCorp-DemoApp
 * https://github.com/HashiCorp-dev-advocates
-* https://github.com/HewlettPackard
 * https://github.com/Huawei
 * https://github.com/Huawei-noah
 * https://github.com/HuaweiCloud
