@@ -65,23 +65,36 @@ name:
 * https://github.com/Philips-Forks
 * https://github.com/DEVin-Philips
 * https://github.com/PuppetLabs
-* [Qualcomm Atheros](https://github.com/qca)
-* https://github.com/realpython
-* https://github.com/RedHatOfficial
-* https://github.com/redhat-developer
-* https://github.com/redhat-cop
-* https://github.com/RedHatTraining
-* https://github.com/redhat-developer-demos
-* https://github.com/redhat-scholars
-* https://github.com/redhat-performance
+
+type: corporation
+name:
 * https://github.com/Salesforce
 * https://github.com/SalesforceFoundation
+type: corporation
+name:
 * https://github.com/Seaber-io
+type: corporation
+name:
 * https://github.com/SUSE
 * https://github.com/openSUSE
+type: corporation
+name:
 * https://github.com/Synopsys-sig
+
+type: corporation
+name:
+
 * https://github.com/Tailscale
+
+type: corporation
+name:
+
 * https://github.com/T-MobileNL
+
+type: corporation
+name:
+
+
 * https://github.com/Tencent/
 * https://github.com/TencentCloud/
 
@@ -108,6 +121,7 @@ For these the above suggestion might be even more relevant, but I felt they dese
 * https://github.com/WordPress see also [Wordpress](https://wordpress.org/download/source/)
 * [GitLab.org](https://gitlab.com/gitlab-org) and [GitLab.com](https://gitlab.com/gitlab-com)
 
+* https://github.com/realpython
 
 
 ## Open Source projects shared by corporations
