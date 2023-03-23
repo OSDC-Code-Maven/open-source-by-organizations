@@ -26,15 +26,15 @@ name:
 * https://github.com/HashiCorp
 * https://github.com/HashiCorp-DemoApp
 * https://github.com/HashiCorp-dev-advocates
+
+type: corporation
+name:
 * https://github.com/Huawei
 * https://github.com/Huawei-noah
 * https://github.com/HuaweiCloud
 * https://github.com/HuaweiCodeLabs
-* https://github.com/Intuit
-* https://github.com/LinkedIn
-* https://github.com/LinkedInLearning
-* https://github.com/LinkedIn-samples
-* https://github.com/LinkedInAttic
+
+
 * https://github.com/LiquidHackGroup
 * https://github.com/LiquidLight
 * https://github.com/LiquidWeb
@@ -56,14 +56,25 @@ name:
 * https://github.com/nginx
 * https://github.com/npm
 * https://github.com/OpenCageData
+
+type: corporation
+name:
 * https://github.com/Oracle
+type: corporation
+name:
 * https://github.com/PacificBiosciences
+
+
+type: corporation
+name:
 * https://github.com/Philips-internal
 * https://github.com/Philips-labs
 * https://github.com/Philips-EMR
 * https://github.com/Philips-Software
 * https://github.com/Philips-Forks
 * https://github.com/DEVin-Philips
+type: corporation
+name:
 * https://github.com/PuppetLabs
 
 type: corporation
