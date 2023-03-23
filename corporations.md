@@ -66,10 +66,7 @@ name:
 * https://github.com/DEVin-Philips
 * https://github.com/PuppetLabs
 
-type: corporation
-name:
-* https://github.com/Salesforce
-* https://github.com/SalesforceFoundation
+
 type: corporation
 name:
 * https://github.com/Seaber-io
