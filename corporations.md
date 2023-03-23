@@ -66,23 +66,6 @@ name:
 * https://github.com/DEVin-Philips
 * https://github.com/PuppetLabs
 
-
-type: corporation
-name:
-* https://github.com/Seaber-io
-type: corporation
-name:
-* https://github.com/SUSE
-* https://github.com/openSUSE
-type: corporation
-name:
-* https://github.com/Synopsys-sig
-
-type: corporation
-name:
-
-* https://github.com/Tailscale
-
 type: corporation
 name:
 
