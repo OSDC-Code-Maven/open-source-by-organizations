@@ -43,7 +43,7 @@ def render(template, filename, **args):
 
 def read_organisations(root):
     organisations = {}
-    org_path = os.environ.get('OSBO_ORG', root.joinpath('organisations'))
+    org_path = os.environ.get('OSBO_ORG', root.joinpath('data', 'organisations'))
     for yaml_file in org_path.iterdir():
         if yaml_file.suffix != '.yaml':
             exit(f"Invalid file name {yaml_file}")
@@ -60,7 +60,7 @@ def read_github_organisations(root, files, organisations):
             pathes.append(pathlib.Path(file))
     else:
         github_path_str = os.environ.get('OSBO_GITHUB')
-        github_path = pathlib.Path(github_path_str) if github_path_str else root.joinpath('github')
+        github_path = pathlib.Path(github_path_str) if github_path_str else root.joinpath('data', 'github')
         pathes = github_path.iterdir()
     github_organisations = []
     for yaml_file in pathes:

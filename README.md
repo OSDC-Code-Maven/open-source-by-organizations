@@ -15,7 +15,7 @@ In this repository we collect these organizations.
 
 ## File format
 
-### `organisations/`
+### `data/organisations/`
 
 Some corporation and universities have multiple GitHub organizations. For example in a university each research lab might have its own GitHub organization. In order to have store common information about these we have a separate folder called `organisations/` where we have a YAML file for each such corporation or university. The YAML files in the `github/` folder can refer to this entity by adding the `org:` field.
 
@@ -25,7 +25,7 @@ Required fields: `type`, `url`.
 Optional fields: `city`, `state`, `country`
 
 
-### `github/`
+### `data/github/`
 
 We store information about GitHub organizations (not about individual GitHub repositories).
 The name of the file is `github/ORGA.yaml` where ORGA is the exact same name as `https://github.com/ORGA/`. The exact case will be used to display the name of the repository.
