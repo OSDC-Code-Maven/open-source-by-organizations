@@ -8,6 +8,9 @@ not happen you can include your contribution in your CV and you can mention it d
 
 We are moving the entries to yaml files
 
+type: corporation
+name:
+
 * https://github.com/DataStax
 * https://github.com/DataStaxDevs
 * https://github.com/DataStax-Examples
@@ -89,11 +92,6 @@ We are moving the entries to yaml files
 * https://github.com/VMware
 * https://github.com/VolksWagen
 * https://github.com/WalmartLabs
-* https://github.com/WIX
-* https://github.com/Yahoo
-* https://github.com/Youtube
-* https://github.com/Zapier
-* https://github.com/Zappos
 
 * https://github.com/IntelliTree
 * https://github.com/vanstyn (Owner of https://www.intellitree.com/)
