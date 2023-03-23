@@ -81,11 +81,6 @@ Moving to YAML files
 
 * https://github.com/broadinstitute
 
-## [Columbia University](https://columbia.edu/), New York, USA
-
-* https://github.com/ColumbiaDVMM
-* https://github.com/columbia-university-robotics
-* https://github.com/columbia-it
 
 ## [Stanford University](https://stanford.edu), San Francisco, USA
 
