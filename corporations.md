@@ -84,14 +84,6 @@ name:
 * https://github.com/T-MobileNL
 * https://github.com/Tencent/
 * https://github.com/TencentCloud/
-* https://github.com/TexasInstruments
-* https://github.com/Tumblr
-* https://github.com/TikTok
-* https://github.com/Twitter
-* https://github.com/Visa
-* https://github.com/VMware
-* https://github.com/VolksWagen
-* https://github.com/WalmartLabs
 
 * https://github.com/IntelliTree
 * https://github.com/vanstyn (Owner of https://www.intellitree.com/)
