@@ -76,13 +76,6 @@ Moving to YAML files
 * https://github.com/WMTU
 * https://github.com/MTU-IMES-LAB
 
-## Harvard, USA
-
-* https://github.com/harvard
-* [Harvard NLP](https://github.com/harvardnlp) Cornell?
-* https://github.com/harvardinformatics
-* https://github.com/Harvard-IACS
-* [Harvard Library Innovation Laboratory](https://github.com/harvard-lil)
 
 ## [The Broad Institute - Harvard and MIT](https://www.broadinstitute.org/), USA
 
