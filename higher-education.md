@@ -16,18 +16,6 @@ Moving to YAML files
 
 * https://github.com/Ramco-Insitute-of-Technology
 
-
-## [Weizmann Institute of Science](https://www.weizmann.ac.il/), Rehovot, Israel
-
-* https://github.com/WeizmannVision
-* https://github.com/WeizmannML
-* https://github.com/Weizmann-Math
-* https://github.com/WIS-MICC-CellObservatory
-* https://github.com/PeTeL-Weizmann
-* https://github.com/NeuralSyntaxLab
-* https://github.com/eXplicit-prosody-lab
-* https://github.com/American-Committee-for-Weizmann
-
 ## [Tel Aviv University](https://www.tau.ac.il/), Israel
 
 * https://github.com/Py4Life
