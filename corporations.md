@@ -71,12 +71,6 @@ name:
 
 * https://github.com/T-MobileNL
 
-type: corporation
-name:
-
-
-* https://github.com/Tencent/
-* https://github.com/TencentCloud/
 
 * https://github.com/IntelliTree
 * https://github.com/vanstyn (Owner of https://www.intellitree.com/)
