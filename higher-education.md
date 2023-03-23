@@ -7,10 +7,6 @@ If you know more send a Pull-Request or open an issue with the links.
 
 Moving to YAML files
 
-## [Ramco Institute of Technology](https://www.ritrjpm.ac.in/), India
-
-* https://github.com/Ramco-Insitute-of-Technology
-
 ## [Tel Aviv University](https://www.tau.ac.il/), Israel
 
 * https://github.com/Py4Life
