@@ -76,17 +76,6 @@ Moving to YAML files
 * https://github.com/WMTU
 * https://github.com/MTU-IMES-LAB
 
-## [MIT - Massachusetts Institute of Technology](https://web.mit.edu/), Cambridge, MA, USA
-
-* https://github.com/mit
-* https://github.com/mit-pdos
-* https://github.com/mit-han-lab
-* https://github.com/mitmedialab
-* https://github.com/MIT-SPARK
-* https://github.com/mit-dci
-* https://github.com/mit-acl
-* https://github.com/MIT-LCP
-
 ## Harvard, USA
 
 * https://github.com/harvard
