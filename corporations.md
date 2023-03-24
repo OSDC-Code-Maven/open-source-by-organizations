@@ -41,22 +41,7 @@ name:
 * https://github.com/npm
 * https://github.com/OpenCageData
 
-type: corporation
-name:
-* https://github.com/Oracle
-type: corporation
-name:
-* https://github.com/PacificBiosciences
 
-
-type: corporation
-name:
-* https://github.com/Philips-internal
-* https://github.com/Philips-labs
-* https://github.com/Philips-EMR
-* https://github.com/Philips-Software
-* https://github.com/Philips-Forks
-* https://github.com/DEVin-Philips
 type: corporation
 name:
 * https://github.com/PuppetLabs
