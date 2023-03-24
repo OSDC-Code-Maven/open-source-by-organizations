@@ -10,23 +10,20 @@ We are moving the entries to yaml files
 
 name:
 type: corporation
+url:
 
 org: datastax
 name: 
 
 
 
-* https://github.com/Deriv-com
-* https://github.com/Derivable-io
+
 * https://github.com/geocodeearth
 * https://github.com/geocode2020
     * https://github.com/Google
 * [Terraform modules for Google Cloud](https://github.com/terraform-google-modules)
 * https://github.com/Gradle
 * https://github.com/Gradlex-org
-* https://github.com/HashiCorp
-* https://github.com/HashiCorp-DemoApp
-* https://github.com/HashiCorp-dev-advocates
 
 type: corporation
 name:
