@@ -23,9 +23,7 @@ name:
 * https://github.com/mitre
 * https://github.com/nanoporetech
 * https://github.com/nginx
-* https://github.com/npm
 * https://github.com/OpenCageData
-* https://github.com/IntelliTree
 * https://github.com/vanstyn (Owner of https://www.intellitree.com/)
 * https://github.com/nrdvana (Most senior employee of https://www.intellitree.com/)
 * https://github.com/bucardo collected on https://www.endpointdev.com/ (by https://www.endpointdev.com/ )
@@ -35,10 +33,6 @@ name:
 This is going to be a separate list of companies where the main product is itself Open Source.
 For these the above suggestion might be even more relevant, but I felt they deserve a separate category.
 
-
-* https://github.com/Elastic
-* https://github.com/RedisLabs
-* https://github.com/RedisLabsDemo
 * https://github.com/WordPress see also [Wordpress](https://wordpress.org/download/source/)
 * [GitLab.org](https://gitlab.com/gitlab-org) and [GitLab.com](https://gitlab.com/gitlab-com)
 
