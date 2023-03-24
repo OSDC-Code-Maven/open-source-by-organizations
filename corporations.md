@@ -12,8 +12,8 @@ name:
 type: corporation
 url:
 
-org: datastax
-name: 
+org:
+name:
 
 
 
@@ -24,13 +24,6 @@ name:
 * [Terraform modules for Google Cloud](https://github.com/terraform-google-modules)
 * https://github.com/Gradle
 * https://github.com/Gradlex-org
-
-type: corporation
-name:
-* https://github.com/Huawei
-* https://github.com/Huawei-noah
-* https://github.com/HuaweiCloud
-* https://github.com/HuaweiCodeLabs
 
 
 * https://github.com/LiquidHackGroup
