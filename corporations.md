@@ -15,15 +15,9 @@ url:
 org:
 name:
 
-
-
-
-* https://github.com/geocodeearth
 * https://github.com/geocode2020
-    * https://github.com/Google
 * [Terraform modules for Google Cloud](https://github.com/terraform-google-modules)
-* https://github.com/Gradle
-* https://github.com/Gradlex-org
+
 
 
 * https://github.com/LiquidHackGroup
@@ -42,16 +36,6 @@ name:
 * https://github.com/OpenCageData
 
 
-type: corporation
-name:
-* https://github.com/PuppetLabs
-
-type: corporation
-name:
-
-* https://github.com/T-MobileNL
-
-
 * https://github.com/IntelliTree
 * https://github.com/vanstyn (Owner of https://www.intellitree.com/)
 * https://github.com/nrdvana (Most senior employee of https://www.intellitree.com/)
@@ -64,7 +48,7 @@ name:
 This is going to be a separate list of companies where the main product is itself Open Source.
 For these the above suggestion might be even more relevant, but I felt they deserve a separate category.
 
-* https://github.com/Chef
+
 * https://github.com/Eelastic
 * https://github.com/MongoDB
 * https://github.com/MongoDB-developer
