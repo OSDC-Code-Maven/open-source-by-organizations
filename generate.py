@@ -1,6 +1,7 @@
 import argparse
 import json
 import os
+import re
 import requests
 import pathlib
 import shutil
@@ -45,7 +46,7 @@ def read_organisations(root):
     organisations = {}
     org_path = os.environ.get('OSBO_ORG', root.joinpath('data', 'organisations'))
     for yaml_file in org_path.iterdir():
-        if yaml_file.suffix != '.yaml':
+        if not re.search(r'^[a-z.]+.yaml', yaml_file.parts[-1]):
             exit(f"Invalid file name {yaml_file}")
         with open(yaml_file) as fh:
             data = yaml.load(fh, Loader=yaml.Loader)
@@ -64,7 +65,7 @@ def read_github_organisations(root, files, organisations):
         pathes = github_path.iterdir()
     github_organisations = []
     for yaml_file in pathes:
-        if yaml_file.suffix != '.yaml':
+        if not re.search(r'^[a-z-]+.yaml', yaml_file.parts[-1]):
             exit(f"Invalid file name {yaml_file}")
         # print(yaml_file)
         with open(yaml_file) as fh:
