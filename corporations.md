@@ -8,13 +8,14 @@ not happen you can include your contribution in your CV and you can mention it d
 
 We are moving the entries to yaml files
 
-type: corporation
 name:
+type: corporation
 
-* https://github.com/DataStax
-* https://github.com/DataStaxDevs
-* https://github.com/DataStax-Examples
-* https://github.com/DataStax-Academy
+org: datastax
+name: 
+
+
+
 * https://github.com/Deriv-com
 * https://github.com/Derivable-io
 * https://github.com/geocodeearth
