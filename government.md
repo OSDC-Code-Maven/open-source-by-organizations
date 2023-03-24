@@ -2,14 +2,26 @@
 
 Somewhat surprisingly there are many local and country-wise governments around the world that share some of their software under and Open Source license. We are collecting them in this list.
 
-There are separate lists for [Open Source by Higher Education](https://github.com/szabgab/open-source-by-higher-education) and [Open Source by Corporations](https://github.com/szabgab/open-source-by-corporations)
+See also https://government.github.com/community/   and also: https://code.open.canada.ca/en/index.html
+
+name:
+type: gov
+url:
+city:
+state:
+country:
+
+name:
+type: gov
+url:
+city:
+state:
+country: Canada
+
 
 ## Canada
 
 * [Canadian Municipal GitHub Rankings](https://cityssm.github.io/municipal-github-rankings/)
-* [Province of British Columbia](https://github.com/bcgov/)
-* [Province of British Columbia Social Sector](https://github.com/bcgov-isd)
-* [The City of Sault Ste. Marie in the Province of Ontario](https://github.com/cityssm)
 * [Government of Ontario | Gouvernement de l'Ontario](https://github.com/ongov)
 * [Government of Yukon](https://github.com/ytgov)
 
