@@ -32,16 +32,9 @@ name:
 * https://github.com/Liquid-Web-Design-London
 * https://github.com/Logitech
 * https://github.com/Lyft
-    * https://github.com/Mastercard
 * https://github.com/Mercedes-Benz
-* https://github.com/Microsoft
-* https://github.com/MicrosoftDocs
-* https://github.com/MicrosoftLearning
-* https://github.com/Azure
-* https://github.com/MicrosoftGraph
-* https://github.com/Microsoft-OpenSource-Labs
-* https://github.com/MicrosoftEdge
-* https://github.com/MicrosoftArchive
+
+
 * https://github.com/mitre
 * https://github.com/nanoporetech
 * https://github.com/nginx
