@@ -17,19 +17,6 @@ country:
 org:
 name:
 
-
-## Edinburgh Cancer Research UK Centre
-
-* https://github.com/CarragherLab
-
-## [University of Edinburgh](https://www.ed.ac.uk/), Scotland, UK
-
-* https://github.com/EdinburghNLP
-* https://github.com/uoe-agents
-* https://github.com/compsoc-edinburgh
-* https://github.com/ipab-slmc
-* https://github.com/ease-lab
-
 ## [The University of Manchester](https://www.manchester.ac.uk/), UK
 
 * https://github.com/SpiNNakerManchester
