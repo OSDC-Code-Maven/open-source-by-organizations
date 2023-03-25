@@ -17,18 +17,6 @@ country: USA
 org:
 name:
 
-## [University of Louisiana](https://louisiana.edu/), USA
-
-* https://github.com/ULGameLab
-
-##  [Xavier University of Louisiana](https://www.xula.edu/), USA
-
-* https://github.com/xavieruniv
-
-## [LSU - Louisiana State University](https://lsu.edu/), USA
-
-* https://github.com/digital-culture-seminar
-
 ## [RIT - Rochester Institute of Technology](https://www.rit.edu/), NY, USA
 
 * https://github.com/RITlug
