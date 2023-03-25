@@ -18,17 +18,6 @@ org:
 name:
 
 
-## [CERN - European Organization for Nuclear Research](https://home.cern/), Geneva, Switzerland
-
-* https://github.com/CERN
-* https://github.com/cernops
-* https://github.com/cernphsft
-* https://github.com/cernopendata
-* https://github.com/cerndb
-* https://github.com/cern-fts
-* https://github.com/ubuntu-cern
-
-
 ## Edinburgh Cancer Research UK Centre
 
 * https://github.com/CarragherLab
