@@ -17,18 +17,6 @@ country: USA
 org:
 name:
 
-##  [University of Pennsylvania](https://www.upenn.edu/), Philadelphia, Pennsylvania, USA
-
-* https://github.com/upenn
-* https://github.com/mlab-upenn
-* https://github.com/daniilidis-group
-* https://github.com/upenn-cis5520
-* https://github.com/eniac
-* https://github.com/alelab-upenn
-* https://github.com/grasp-lyrl
-* https://github.com/Xinglab
-* https://github.com/icgrp
-* https://github.com/UPENNANALYTICS
 
 
 ## [Rutgers University](https://www.rutgers.edu/)  Piscataway, NJ, USA
