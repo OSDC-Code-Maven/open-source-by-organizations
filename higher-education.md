@@ -17,18 +17,6 @@ country:
 org:
 name:
 
-## [The University of Manchester](https://www.manchester.ac.uk/), UK
-
-* https://github.com/SpiNNakerManchester
-* https://github.com/FPGA-Research-Manchester
-* https://github.com/the-cai-lab
-* https://github.com/beehive-lab
-* https://github.com/unicsmcr
-* https://github.com/manchester-hyperloop
-* https://github.com/UoMMIB
-* https://github.com/fls-bioinformatics-core
-
-
 ## [MTU - Michigan Tech](https://www.mtu.edu/), Houghton, MI, USA
 
 * [Open Source at MTU](https://opensource.mtu.edu/)
