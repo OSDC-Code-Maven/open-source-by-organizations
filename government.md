@@ -2,7 +2,9 @@
 
 Somewhat surprisingly there are many local and country-wise governments around the world that share some of their software under and Open Source license. We are collecting them in this list.
 
-See also https://government.github.com/community/   and also: https://code.open.canada.ca/en/index.html
+* See also https://government.github.com/community/   and also: https://code.open.canada.ca/en/index.html
+* See also [European Commission’s Open Source Observatory](https://joinup.ec.europa.eu/collection/open-source-observatory-osor)
+* See also [code.gov](https://code.gov/)
 
 name:
 type: gov

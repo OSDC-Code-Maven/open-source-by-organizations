@@ -7,17 +7,17 @@ If you know more send a Pull-Request or open an issue with the links.
 
 Moving to YAML files
 
-## [Tel Aviv University](https://www.tau.ac.il/), Israel
+name:
+type: university
+url:
+city:
+state:
+country:
 
-* https://github.com/Py4Life
+org:
+name:
 
-## [Hebrew University in Jerusalem](https://new.huji.ac.il/), Israel
 
-* [NLP - Natural Language Processing lab](https://github.com/huji-nlp)
-* [The Spoken Language Processing Research Lab (SLP-RL)](https://github.com/slp-rl)
-* [Distributed Algorithms, Networking and Secure Systems Group](https://github.com/HUJI-DANSS)
-* [Machine Perception Group - Machine Vision and Learning research group](https://github.com/HUJI-Machine-Perception-Group)
-* [Introduction to Machine Learning](https://github.com/GreenGilad/IML.HUJI)
 
 ## [Technion](https://www.technion.ac.il/), Israel
 
@@ -234,3 +234,7 @@ Moving to YAML files
 * [Keller lab](https://github.com/bkellerlab)  https://www.bcp.fu-berlin.de/
 * [Institut für Informatik](https://github.com/fubinf)  https://www.mi.fu-berlin.de/
 
+
+## Other
+
+[Introduction to Machine Learning](https://github.com/GreenGilad/IML.HUJI)
