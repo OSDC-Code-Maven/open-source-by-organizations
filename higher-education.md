@@ -17,16 +17,6 @@ country: USA
 org:
 name:
 
-## [CSU - Colorado State University](https://www.colostate.edu/), USA
-
-* https://github.com/csu-library
-* https://github.com/patonlab
-* https://github.com/CSU-CompSci-CS163-4
-* https://github.com/stenglein-lab
-* https://github.com/NuiLab
-* https://github.com/chan-csu
-* https://github.com/csu-ricro
-
 ## [WSCU - Western State Colorado University](https://western.edu/), USA
 
 * https://github.com/WSCU
