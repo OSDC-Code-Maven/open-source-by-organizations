@@ -17,18 +17,6 @@ country: USA
 org:
 name:
 
-## [RIT - Rochester Institute of Technology](https://www.rit.edu/), NY, USA
-
-* https://github.com/RITlug
-* https://github.com/RIT-EVT
-* https://github.com/ritsec
-* https://github.com/FOSSRIT
-* https://github.com/RITHonorsTechCommittee
-* https://github.com/rit-csc
-* https://github.com/RITcraft
-* https://github.com/RITIVCF
-* https://github.com/RITJBF
-
 ## [CSU - Colorado State University](https://www.colostate.edu/), USA
 
 * https://github.com/csu-library
