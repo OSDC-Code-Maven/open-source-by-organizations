@@ -29,54 +29,6 @@ name:
 
 * https://github.com/broadinstitute
 
-
-
-org: stanford.edu
-name:
-* https://github.com/Stanford
-org: stanford.edu
-name:
-* https://github.com/stanfordnlp
-org: stanford.edu
-name:
-* https://github.com/StanfordASL
-org: stanford.edu
-name:
-* https://github.com/StanfordVL
-org: stanford.edu
-name:
-* https://github.com/stanfordmlgroup
-org: stanford.edu
-name:
-* https://github.com/stanford-oval
-org: stanford.edu
-name:
-* https://github.com/stanfordroboticsclub
-org: stanford.edu
-name:
-* https://github.com/stanford-futuredata
-org: stanford.edu
-name:
-* https://github.com/Stanford-ILIAD
-org: stanford.edu
-name:
-* https://github.com/StanfordHCI
-org: stanford.edu
-name:
-* https://github.com/StanfordAHA
-org: stanford.edu
-name:
-* https://github.com/stanfordnmbl
-org: stanford.edu
-name:
-* https://github.com/stanford-ssi
-org: stanford.edu
-name:
-* https://github.com/StanfordSNR
-org: stanford.edu
-name:
-* https://github.com/stanford-iprl-lab
-
 ## [UC Berkeley](https://www.berkeley.edu/), USA
 
 * https://github.com/ucb-bar
