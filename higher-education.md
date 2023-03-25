@@ -7,22 +7,15 @@ If you know more send a Pull-Request or open an issue with the links.
 
 Moving to YAML files
 
-name:
+name: 
 type: university
-url:
-city:
-state:
-country:
+url: 
+city: 
+state: 
+country: USA
 
 org:
 name:
-
-## [UC Berkeley](https://www.berkeley.edu/), USA
-
-* https://github.com/ucb-bar
-* https://github.com/ucbrise
-* https://github.com/UC-Berkeley-I-School
-* https://github.com/cdlib
 
 ## [UCLA](https://www.ucla.edu/), USA
 
