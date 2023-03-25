@@ -18,22 +18,6 @@ org:
 name:
 
 
-
-## [Technion](https://www.technion.ac.il/), Israel
-
-* [Aran Lab](https://github.com/dviraran)
-* [Computer Systems Lab](https://github.com/technion-csl)
-* [NLP](https://github.com/technion-nlp-lab)
-* [ACSL: Technion Accelerated Computing Systems Lab](https://github.com/acsl-technion)
-* [Israel Cohen's Lab](https://github.com/IsraelCohenLab)
-* [CEAR Lab - Technion ](https://github.com/CearLab)
-* [Kaplan Lab of Genome Structure & Function](https://github.com/KaplanLab)
-* [Technion's CS AVR Lab](https://github.com/TechnionAVRLab)
-* [Ronen Talmon's Lab](https://github.com/RonenTalmonLab)
-* [SQC lab - Technion](https://github.com/SQClab)
-* [Scalpel Lab - Technion](https://github.com/ScalpelTech)
-* [MTRL lab -Technion Institute of technology](https://github.com/MTRL-lab)
-
 ## [CERN - European Organization for Nuclear Research](https://home.cern/), Geneva, Switzerland
 
 * https://github.com/CERN
