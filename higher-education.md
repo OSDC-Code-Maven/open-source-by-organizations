@@ -19,16 +19,6 @@ name:
 
 
 
-## [Rutgers University](https://www.rutgers.edu/)  Piscataway, NJ, USA
-
-* https://github.com/rutgers
-* https://github.com/rutgerswiselab
-* https://github.com/RutgersCodingBootcamp
-* https://github.com/RutgersRoboticsResearch
-* https://github.com/rutgers-apl
-* https://github.com/Rutgers-CG
-
-
 ## [The University of Texas at Austin](https://www.utexas.edu/), USA
 
 * https://github.com/UT-Austin
