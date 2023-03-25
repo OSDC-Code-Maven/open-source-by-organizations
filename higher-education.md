@@ -17,15 +17,6 @@ country: USA
 org:
 name:
 
-## [UCLA](https://www.ucla.edu/), USA
-
-* https://github.com/ucla
-* https://github.com/uclaml
-* https://github.com/uclaacm
-* https://github.com/UCLA-VAST
-* https://github.com/uclasystem
-* https://github.com/uclastudentmedia
-* https://github.com/UCLA-StarAI
 
 ## [University of Virginia](https://www.virginia.edu/),  Charlottesville, VA, USA
 
