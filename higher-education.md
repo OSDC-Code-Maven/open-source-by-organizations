@@ -17,18 +17,6 @@ country:
 org:
 name:
 
-## [MTU - Michigan Tech](https://www.mtu.edu/), Houghton, MI, USA
-
-* [Open Source at MTU](https://opensource.mtu.edu/)
-* https://github.com/MichiganTech
-* https://github.com/WMTU
-* https://github.com/MTU-IMES-LAB
-
-
-## [The Broad Institute - Harvard and MIT](https://www.broadinstitute.org/), USA
-
-* https://github.com/broadinstitute
-
 ## [UC Berkeley](https://www.berkeley.edu/), USA
 
 * https://github.com/ucb-bar
@@ -157,3 +145,11 @@ name:
 ## Other
 
 [Introduction to Machine Learning](https://github.com/GreenGilad/IML.HUJI)
+
+* [Open Source at MTU](https://opensource.mtu.edu/)
+
+## [The Broad Institute - Harvard and MIT](https://www.broadinstitute.org/), USA
+
+* https://github.com/broadinstitute
+
+
