@@ -18,19 +18,6 @@ org:
 name:
 
 
-
-## [The University of Texas at Austin](https://www.utexas.edu/), USA
-
-* https://github.com/UT-Austin
-* https://github.com/UT-Austin-RPL
-* https://github.com/UT-Austin-Data-Science-Group
-* https://github.com/UT-Austin-Quantum-Collective
-* https://github.com/UT-Austin-FIS
-* https://github.com/UT-Austin-Senior-Design-D7
-* https://github.com/UT-Austin-Bootcamp-Proj1-Group-D
-* https://github.com/UT-Austin-RobIn
-
-
 ## [Freie Universität](https://www.fu-berlin.de/) Berlin, Germany
 
 * [Keller lab](https://github.com/bkellerlab)  https://www.bcp.fu-berlin.de/
