@@ -17,14 +17,6 @@ country: USA
 org:
 name:
 
-
-## [Tufs University](https://www.tufts.edu/), USA
-
-* https://github.com/tuftsdev
-* https://github.com/tuftsdatalab
-* https://github.com/tuftsenigma
-* https://github.com/Tufts-Robotics-Club
-
 ## [University of Louisiana](https://louisiana.edu/), USA
 
 * https://github.com/ULGameLab
