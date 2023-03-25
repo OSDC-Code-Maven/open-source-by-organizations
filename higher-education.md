@@ -17,20 +17,6 @@ country: USA
 org:
 name:
 
-## [WSCU - Western State Colorado University](https://western.edu/), USA
-
-* https://github.com/WSCU
-
-## [Normandale Community College](https://www.normandale.edu/)  Bloomington, MN, USA
-
-* https://github.com/NCCProgramming
-
-## [Rice University](https://www.rice.edu/) Houston, Texas, USA
-
-* https://github.com/kemerelab
-* https://github.com/datamllab
-* https://github.com/rice-eclipse
-
 ##  [University of Pennsylvania](https://www.upenn.edu/), Philadelphia, Pennsylvania, USA
 
 * https://github.com/upenn
