@@ -17,10 +17,6 @@ country: USA
 org:
 name:
 
-## [Indiana University](https://www.iu.edu/), USA
-
-* https://github.com/indiana-university
-* https://github.com/LennonLab
 
 ## [Tufs University](https://www.tufts.edu/), USA
 
