@@ -67,3 +67,9 @@ https://github.com/Ginger-Automation by Amdocs, how shall we add this?
 Sandia
     * [PFLOTRAN](https://www.pflotran.org/)
     * [Dakota](https://dakota.sandia.gov/)
+
+* See also https://government.github.com/community/   and also: https://code.open.canada.ca/en/index.html
+* See also [European Commission’s Open Source Observatory](https://joinup.ec.europa.eu/collection/open-source-observatory-osor)
+* See also [code.gov](https://code.gov/)
+
+
