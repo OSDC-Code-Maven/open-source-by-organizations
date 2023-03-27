@@ -20,15 +20,6 @@ city:
 state:
 country: Canada
 
-## Sri Lanka
-
-* [Department of Health Services, Southern Province](https://github.com/pdhs)
-
-## Sweden
-
-* [Västra Götalandsregionen](https://github.com/Vastra-Gotalandsregionen)
-* [Digg - Agency for Digital Government](https://github.com/diggsweden)
-
 ## USA
 
 * [Sandia](https://www.sandia.gov/):
