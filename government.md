@@ -26,15 +26,6 @@ Sandia
     * [PFLOTRAN](https://www.pflotran.org/)
     * [Dakota](https://dakota.sandia.gov/)
 
-* [United States Government Publishing Office](https://github.com/usgpo)
-* [NIST - National Institute of Standards and Technology](https://github.com/usnistgov)
-* [U.S. Digital Service](https://github.com/usds)
-* [DC Government](https://github.com/DCgov)
-
-* [OpenGovernment](https://github.com/opengovernment) (this should be probably moved to non-profits)
-
-* [code.gov](https://github.com/GSA)
-    * This initiative includes most US government opensource repos. I will pick some interesting ones here. 
 * [National Security Agency](https://github.com/NationalSecurityAgency) (Yes, it is NSA spying on github, not a parody.)
     * **ghidra** is a very powerful reverse compile tool, at IDA pro level. This is likely the reason NSA got into open source.
 * [NASA](https://www.nasa.gov/)
