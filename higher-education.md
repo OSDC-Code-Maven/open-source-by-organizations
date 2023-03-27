@@ -17,13 +17,6 @@ country: USA
 org:
 name:
 
-
-## [Freie Universität](https://www.fu-berlin.de/) Berlin, Germany
-
-* [Keller lab](https://github.com/bkellerlab)  https://www.bcp.fu-berlin.de/
-* [Institut für Informatik](https://github.com/fubinf)  https://www.mi.fu-berlin.de/
-
-
 ## Other
 
 [Introduction to Machine Learning](https://github.com/GreenGilad/IML.HUJI)
