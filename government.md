@@ -20,17 +20,6 @@ city:
 state:
 country: Canada
 
-
-## Canada
-
-* [Canadian Municipal GitHub Rankings](https://cityssm.github.io/municipal-github-rankings/)
-* [Government of Ontario | Gouvernement de l'Ontario](https://github.com/ongov)
-* [Government of Yukon](https://github.com/ytgov)
-
-## Korea
-
-* [Korean e-Government Standard Framework Center](https://github.com/eGovFramework)
-
 ## Sri Lanka
 
 * [Department of Health Services, Southern Province](https://github.com/pdhs)
