@@ -22,6 +22,10 @@ It is very interesting to see and also an opportunity to increase your chances o
 code, open some issues, send some pull-requests. If you are lucky they might notice you and offer you a job. Even if that does
 not happen you can include your contribution in your CV and you can mention it during the ineterview.
 
+### Governments?
+
+Somewhat surprisingly there are many local and country-wise governments around the world that share some of their software under and Open Source license. We are collecting them in this list.
+
 ### Non-profits?
 
 If they help the world and you help them, then you help the world too, right?

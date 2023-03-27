@@ -1,7 +1,5 @@
 # Open Source by government
 
-Somewhat surprisingly there are many local and country-wise governments around the world that share some of their software under and Open Source license. We are collecting them in this list.
-
 * See also https://government.github.com/community/   and also: https://code.open.canada.ca/en/index.html
 * See also [European Commission’s Open Source Observatory](https://joinup.ec.europa.eu/collection/open-source-observatory-osor)
 * See also [code.gov](https://code.gov/)
@@ -20,19 +18,4 @@ city:
 state:
 country: USA
 
-## USA
 
-Sandia
-    * [PFLOTRAN](https://www.pflotran.org/)
-    * [Dakota](https://dakota.sandia.gov/)
-
-* [National Security Agency](https://github.com/NationalSecurityAgency) (Yes, it is NSA spying on github, not a parody.)
-    * **ghidra** is a very powerful reverse compile tool, at IDA pro level. This is likely the reason NSA got into open source.
-* [NASA](https://www.nasa.gov/)
-    * Too many repos to list here.
-* [U.S. Department of Energy Office of Scientific and Technical Information](https://github.com/doecode) Mainly maintained by personals in Livermore national lab.
-* [Federal Aviation Administration](https://github.com/Federal-Aviation-Administration)
-    * [Airport Status Web Service (ASWS)](https://github.com/Federal-Aviation-Administration/ASWS) An API to search FAA airports and flight status.
-* [United States Geological Survey Astrogeology Science Center](https://github.com/USGS-Astrogeology)
-    * Integrated Software for Imagers and Spectrometers (ISIS3)
-* [DEVCOM Army Research Laboratory](https://github.com/usarmyresearchlab)
