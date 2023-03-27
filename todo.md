@@ -72,4 +72,9 @@ Sandia
 * See also [European Commission’s Open Source Observatory](https://joinup.ec.europa.eu/collection/open-source-observatory-osor)
 * See also [code.gov](https://code.gov/)
 
+* See [Open Source Policy - Examples and best practices](https://ghinda.com/blog/opensource/2020/open-source-policy-examples-and-best-practices.html)
+* [Open Source Policy Examples and Templates](https://github.com/todogroup/policies) the [TODO group](https://github.com/todogroup)
+* [Defining a secure open source policy](https://snyk.io/series/open-source-security/open-source-policy/) by Snyk
+* [Open Source License Management Tools: Challenges, Opportunities, and What to Look Out For](https://www.mend.io/resources/blog/open-source-license-management-tools-challenges-opportunities-and-what-to-look-out-for/)
+* [Google Open Source](https://opensource.google/)
 
