@@ -12,7 +12,7 @@
   <tbody>
     {% for org in github_organisations %}
       <tr>
-        <th><a href="github/{{org.id.lower()}}">{{org.name}}</a> {% if org.org_name %}( {{org.org_name}} ){% endif %}</th>
+        <th><a href="/open-source-by-organizations/github/{{org.id.lower()}}">{{org.name}}</a> {% if org.org_name %}( {{org.org_name}} ){% endif %}</th>
         {% if org.github %}
         <td>{{ org.github.repos | length }}</td>
         {% endif %}
