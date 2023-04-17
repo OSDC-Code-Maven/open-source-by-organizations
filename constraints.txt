@@ -9,7 +9,7 @@ iniconfig==2.0.0
 itsdangerous==2.1.2
 Jinja2==3.1.2
 MarkupSafe==2.1.2
-packaging==23.0
+packaging==23.1
 pluggy==1.0.0
 pytest==7.3.0
 PyYAML==6.0
