@@ -1,4 +1,4 @@
-import capture
+import capturecli
 import sys
 import os
 
@@ -12,13 +12,13 @@ def test_generate(tmpdir):
     os.environ['OSBO_GITHUB'] = os.path.join(root, 'tests', 'data', 'github')
     token = os.environ['MY_GITHUB_TOKEN']
     os.environ['MY_GITHUB_TOKEN'] = ''
-    exit_code, out, err = capture.separated([sys.executable, 'generate.py'])
+    exit_code, out, err = capturecli.separated([sys.executable, 'generate.py'])
     print(out)
     assert err == ''
     assert exit_code == 0
 
     os.environ['MY_GITHUB_TOKEN'] = token
-    exit_code, out, err = capture.separated([sys.executable, 'generate.py'])
+    exit_code, out, err = capturecli.separated([sys.executable, 'generate.py'])
     print(out)
     assert err == ''
     assert exit_code == 0

@@ -4,4 +4,4 @@ PyYAML
 requests
 pytest
 
-git+https://github.com/szabgab/capture.git
+git+https://github.com/szabgab/capturecli.git
