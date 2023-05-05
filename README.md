@@ -111,7 +111,7 @@ python generate.py
 * Collect only information only about these two github organizations.
 
 ```
-python generate.py github/bioinform.yaml github/calgaryml.yaml
+python generate.py data/github/bioinform.yaml data/github/calgaryml.yaml
 ```
 
 * Start the local web server
