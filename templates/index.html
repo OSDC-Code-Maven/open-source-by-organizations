@@ -2,24 +2,18 @@
 
 <h1 class="title">{{title}}</h1>
 
-<table>
+<table class="table is-centered is-narrow">
     <thead>
         <tr>
-            <th><center>Organization Types&nbsp</center></th>
-            <th><center>&nbspNumber of Organizations</center></th>
-	</tr>
-	<tr>
-	    <th><br></th>
-	</tr>
+            <th>Organization Types</th>
+            <th>Number of Organizations</th>
+        </tr>
     </thead>
     <tbody>
         {% for org_type, display_name in org_types.items() %}
             <tr>
                 <td><a href="/open-source-by-organizations/{{org_type}}">{{ display_name }}</a></td>
-                <td><center>{{ stats.by_type[org_type] }}</center></td>
-            </tr>
-            <tr>
-                <td colspan="2">&nbsp;</td> <!-- Add a row with an empty cell that spans both columns to create spacing between rows -->
+                <td>{{ stats.by_type[org_type] }}</td>
             </tr>
         {% endfor %}
     </tbody>
@@ -28,4 +22,3 @@
 <p>This site is being developed by the participants of the <a href="/">course</a>.</p>
 
 {% include 'incl/footer.html' %}
-
