@@ -122,4 +122,18 @@ python generate.py data/github/bioinform.yaml data/github/calgaryml.yaml
 
 Visit the site at http://localhost:5000/
 
+## Dependabot and upgrading dependencies
+
+While we have dependabot enabled it will open PR for each upgrade separately and then the CI won't run for all of them.
+
+Our alternative is to run this once a month:
+
+```
+virtualenv -p python3 venv
+source venv/bin/activate
+pip install -U -r requirements.txt
+pytest
+pip freeze > constraints.txt
+```
+
 
