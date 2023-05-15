@@ -1,5 +1,5 @@
 blinker==1.6.2
-capture-cli @ git+https://github.com/szabgab/capturecli.git@97b9ed12a4938b9bf4f4d4eec725fbb0e3adefb5
+# capture-cli @ git+https://github.com/szabgab/capturecli.git@97b9ed12a4938b9bf4f4d4eec725fbb0e3adefb5
 certifi==2022.12.7
 charset-normalizer==3.1.0
 click==8.1.3
