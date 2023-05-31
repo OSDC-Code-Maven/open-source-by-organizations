@@ -13,6 +13,14 @@ If you know more send a Pull-Request or open an issue with the links.
 
 In this repository we collect these organizations.
 
+## What is an "organization"
+
+Unfortunately there is a slight overloading of the world "organization" as it can refer to both a "github-organization"
+and a "real-world-organization" and the mapping is not 1-1.
+
+In this project we try to use the expression "real-world-organization" to any corporation, university, colleges, non-profits, government etc.
+and "github-organization" to any organization in GitHub that has a page `https://github.com/ORGNAME`.
+
 ## Why would you want to contribute to
 
 ### Corporations?
@@ -30,14 +38,32 @@ Somewhat surprisingly there are many local and country-wise governments around t
 
 If they help the world and you help them, then you help the world too, right?
 
+real-world organization
 
 ## File format
 
+### `data/github/`
+
+We store information about GitHub-organizations (not about individual GitHub repositories).
+
+Each github-organization that belongs to a real-world-organization will have an entry in this folder.
+
+The name of the file is `github/organization.yaml` where `organization` is the lower case version of the name that comes from the URL: `https://github.com/organization/`.
+
+Required fields: `name` and either `type` or `org`.
+
+Optional fields: `city`, `state`, `country`.
+
+```
+org:
+name:
+```
+
 ### `data/organisations/`
 
-Some corporation and universities have multiple GitHub organizations. For example in a university each research lab might have its own GitHub organization. In order to have store common information about these we have a separate folder called `organisations/` where we have a YAML file for each such corporation or university. The YAML files in the `github/` folder can refer to this entity by adding the `org:` field.
+Some real-world-organizations have multiple GitHub-organizations. For example in a university each research lab might have its own GitHub organization. In order to store common information about these github-organizations we have a separate folder called `data/organisations/` where we store a YAML file for each such real-world-organization. The YAML files in the `data/github/` folder then will have to refer to this entity by adding the `org:` field.
 
-For example see the `Bosch` entries.
+For example see the `data/organisations/bosch.yaml` or `data/organisations/mit.edu.yaml` entries of real-worl-organizations.
 
 Required fields: `type`, `url`.
 Optional fields: `city`, `state`, `country`
@@ -49,20 +75,6 @@ url:
 city:
 state:
 country:
-```
-
-### `data/github/`
-
-We store information about GitHub organizations (not about individual GitHub repositories).
-The name of the file is `github/ORGA.yaml` where ORGA is the exact same name as `https://github.com/ORGA/`. The exact case will be used to display the name of the repository.
-
-Required fields: `name` and either `type` or `org`.
-
-Optional field: `city`, `state`, `country`.
-
-```
-org:
-name:
 ```
 
 ### Valid values
