@@ -71,7 +71,7 @@ name:
 
 Some real-world-organizations have multiple GitHub-organizations. For example in a university each research lab might have its own GitHub organization. In order to store common information about these github-organizations we have a separate folder called `data/organisations/` where we store a YAML file for each such real-world-organization. The YAML files in the `data/github/` folder then will have to refer to this entity by adding the `org:` field.
 
-For example see the `data/organisations/bosch.yaml` or `data/organisations/mit.edu.yaml` entries of real-worl-organizations.
+For example see the `data/organisations/bosch.com.yaml` or `data/organisations/mit.edu.yaml` entries of real-worl-organizations.
 
 Here the filename should be the domain name of the real-world-organization.yaml. This is not always the case. We are fixing it now.
 
