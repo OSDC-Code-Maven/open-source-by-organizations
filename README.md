@@ -2,16 +2,24 @@
 
 There are a lot of corporations, non-profits, higher education institutions, and even governments, that share some of the software they created for themselves under an Open Source license.
 
-It is very interesting to see and also an opportunity to increase your chances of employment. Make yourself familiar with their code, open some issues, send some pull-requests. If you are lucky they might notice you and offer you a job. Even if that does not happen you can include your contribution in your CV and you can mention it during the ineterview.
+In this repository we collect these organizations and then analyze their projects.
 
-Somewhat surprisingly there are many local and country-wise governments around the world that share some of their software under and Open Source license. We are collecting them in this list.
+Some of the contributions is collecting and curating data that does not require programming. It only requires an understanding of what is a "github organization", what is a yaml file,
+and how to send a pull-request.
 
-The following Universities and other Higher Education Institutions have projects of their own that were released under an Open Source license.
-Here you can find links to the GitHub organizations of the institutions or that of specific labs or departments of these institutions.
+## Why would information about these open source projects be interesting?
+
+Let's say you are interested in being employed by company XYZ. You can increase your chances of success by making yourself familiar with the company and some of the projects of the company.
+Find their open source projects, make yourself familiar with their code, open some issues, send some pull-requests.
+If you are lucky they might notice you and offer you a job. Even if that does not happen you can include your contribution in your CV and you can mention it during the ineterview.
+
+Somewhat surprisingly there are many local and country-wise governments around the world that share some of their software under and Open Source license.
+We are collecting those too in this list.
+
+Many Universities and other Higher Education Institutions have projects of their own that were released under an Open Source license.
+We collect the GitHub organizations of the institutions or that of specific labs or departments of these institutions.
 
 If you know more send a Pull-Request or open an issue with the links.
-
-In this repository we collect these organizations.
 
 ## What is an "organization"
 
@@ -65,6 +73,8 @@ Some real-world-organizations have multiple GitHub-organizations. For example in
 
 For example see the `data/organisations/bosch.yaml` or `data/organisations/mit.edu.yaml` entries of real-worl-organizations.
 
+Here the filename should be the domain name of the real-world-organization.yaml. This is not always the case. We are fixing it now.
+
 Required fields: `type`, `url`.
 Optional fields: `city`, `state`, `country`
 
@@ -80,6 +90,19 @@ country:
 ### Valid values
 
 Valid values for the `type` field can be found in the [config.yaml](config.yaml) file as the keys of the `org_types` section.
+
+
+## How to find more organization?
+
+1. On GitHub search for the name of a corporation we don't have in our list yet.
+1. Check if there is a github-organization that holds project belonging to this corporation
+1. Add the appropriate yaml file to our repository.
+
+1. There are several `issues` of our project with links to lists of universities, government institutions etc.
+
+1. On GitHub search for the names of countries, cities, municipalies, etc.
+
+
 
 ## Local development
 
