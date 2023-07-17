@@ -2,7 +2,7 @@ blinker==1.6.2
 # capture-cli @ git+https://github.com/szabgab/capturecli.git@4061df63e739f65f8610c577f13856a733f2a2db
 certifi==2023.5.7
 charset-normalizer==3.1.0
-click==8.1.3
+click==8.1.5
 Flask==2.3.2
 idna==3.4
 iniconfig==2.0.0
