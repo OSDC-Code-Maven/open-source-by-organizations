@@ -36,7 +36,7 @@ and "github-organization" to any organization in GitHub that has a page `https:/
 There are a lot of corporations that share some of the software they created for themselves under an Open Source license.
 It is very interesting to see and also an opportunity to increase your chances of employment. Make yourself familiar with their
 code, open some issues, send some pull-requests. If you are lucky they might notice you and offer you a job. Even if that does
-not happen you can include your contribution in your CV and you can mention it during the ineterview.
+not happen you can include your contribution in your CV and you can mention it during the interview.
 
 ### Governments?
 
@@ -71,7 +71,7 @@ name:
 
 Some real-world-organizations have multiple GitHub-organizations. For example in a university each research lab might have its own GitHub organization. In order to store common information about these github-organizations we have a separate folder called `data/organisations/` where we store a YAML file for each such real-world-organization. The YAML files in the `data/github/` folder then will have to refer to this entity by adding the `org:` field.
 
-For example see the `data/organisations/bosch.com.yaml` or `data/organisations/mit.edu.yaml` entries of real-worl-organizations.
+For example see the `data/organisations/bosch.com.yaml` or `data/organisations/mit.edu.yaml` entries of real-world-organizations.
 
 Here the filename should be the domain name of the real-world-organization.yaml. This is not always the case. We are fixing it now.
 
