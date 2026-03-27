@@ -26,10 +26,10 @@ jobs:
     name: Generate HTML
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v6
 
     - name: Setup Pages
-      uses: actions/configure-pages@v2
+      uses: actions/configure-pages@v5
 
     - name: Get Date
       id: get-date
@@ -38,7 +38,7 @@ jobs:
       shell: bash
 
     - name: Cache fetched data
-      uses: actions/cache@v3
+      uses: actions/cache@v5
       with:
         path: cache
         key: osdc-${{ steps.get-date.outputs.date }}
@@ -56,7 +56,7 @@ jobs:
         python generate.py
 
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v1
+      uses: actions/upload-pages-artifact@v4
       if: github.ref == 'refs/heads/main'
 
   # Deployment job
@@ -70,5 +70,5 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v5
 
